@@ -39,3 +39,6 @@ git add [file] preps a file to be added
 git commit -m [some message in quotes] commits your files.
 
 git push will push the files to the repository.
+
+
+Made my Alexander Silberman
