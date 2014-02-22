@@ -1,4 +1,4 @@
-BillionaireBootcamp
+#BillionaireBootcamp#
 ===================
 
 The Billionaire Bootcamp group
@@ -30,7 +30,7 @@ Now you are connected to the repository.
 
 
 
-If you wish to add things.
+##If you wish to add things.##
 
 git status lists all the things that are new in your folder or have been updated. 
 
