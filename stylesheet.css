@@ -1,0 +1,82 @@
+@charset "utf-8";
+/* CSS Document */
+
+#header {
+	text-align:center;
+	background-color: white;
+	width: 800px;
+	height: 60 px;
+	}
+#navigation{
+	text-align: center;
+	background-color:rgba(80, 187, 65);
+	width:800px;
+	height: 16px; 
+	font: Gill Sans MT;
+	font-size: 17px;
+	}
+
+#sidebar{
+	width:225px;
+	height:auto;
+	float:left;
+	}	
+	
+#company research{
+	background-color: rgba(209 229 172);
+	width: 220 px;
+	font: Arial;
+	font-size: 29px;
+	float: left;
+}
+
+#twitter{
+	float:left;
+	width: 220px;
+	height:275px;
+	}
+
+#main{
+	width: 575px;
+	height:auto;
+	float:left
+	}
+
+.gamesheader{
+	font-family: Arial;
+	font-size: 36px;
+	}
+
+.thrivebudget{
+	width: 268px;
+	height: 225px;
+	}
+
+.billionairetrivia{
+	width: 268px;
+	height:225px;
+	}
+
+.investingmistakes{
+	width: 268px;
+	height:82.5px;
+	font-family: Arial;
+	font-size:21px;
+	float:left;
+	}
+
+.profits{
+	width: 268px;
+	height:82.5px;
+	font-family: Arial;
+	font-size:21px;
+	float:right;
+	}
+#footer{
+	width: 800px;
+	height:10px;
+	text-align:center;
+	}
+
+
+	
