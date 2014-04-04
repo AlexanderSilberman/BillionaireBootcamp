@@ -72,7 +72,7 @@
 
         var questnum = -1;
 		
-	    var mainSeconds = 50;
+	    var mainSeconds = 100;
 	    //start time - enter 300 for 30 seconds, enter 450 for 45 seconds, etc;
 	    var seconds = mainSeconds;
 		
@@ -85,6 +85,8 @@
 	    function answered (optionClicked) {
   	        checkAnswer(optionClicked);
   	        updateScore();
+            disableButtons();
+            enableButtonsAfterDelay();
   	        //resetTimer();
   	    }
 
@@ -99,10 +101,26 @@
 	    function updateScore () {
 	        if (rightOrWrong == 'right') {
 	            score += seconds;
-	            console.log("Current score = " + score);
+                console.log("Current score = " + score);
                 document.getElementById("totalscore").innerHTML = "Score = " + score;
 	        }
 	    }
+
+        function disableButtons () {
+            document.getElementById("a1").disabled=true;
+            document.getElementById("a2").disabled=true;
+            document.getElementById("a3").disabled=true;
+            document.getElementById("a4").disabled=true;
+        }
+
+        function enableButtonsAfterDelay() {
+            setTimeout(function() {
+                document.getElementById("a1").disabled=false;
+                document.getElementById("a2").disabled=false;
+                document.getElementById("a3").disabled=false;
+                document.getElementById("a4").disabled=false;
+            }, 1000);
+        }
 
 	    function resetTimer() {
 
