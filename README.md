@@ -29,6 +29,11 @@ cd into that new folder.
 Now you are connected to the repository.
 
 
+## How to copy repository content ##
+
+go to folder via changing directories that you cloned earlier called BillionaireBootcamp
+
+once in the folder type: git pull
 
 ##If you wish to add things.##
 
