@@ -1,29 +1,3 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-
-    <title>Quiz Game</title>
-    <link href="quizup.css" rel="stylesheet" type="text/css" />
-
-    <script language="javascript">
-	<!--
-	/*
-	<body>
-	<div style="display: block; font-family: Verdana, Geneva, Arial; font-size: 10px">
-    The University of Southern California does not screen or control the content on this website and thus does not guarantee the accuracy, integrity, or quality of such content.  All content on this website is provided by and is the sole responsibility of the person from which such content originated, and such content does not necessarily reflect the opinions of the University administration or the Board of Trustees
-    </div>
-    </body>
-	</html>
-	*/
-	-->
-    </script>
-    <!-- Link your jQuery Library first -->
-    <script src="jquery-2.0.3.min.js"></script>
-
-    <!-- Write your jQuery in the following script block -->
-    <script language = "javascript">
-
         var correctOption = '';
         var gameStatus = '';
 
@@ -37,7 +11,7 @@
 
         //array of other arrays
         var anstype = [realans,fakeans1,fakeans2,fakeans3];
-       
+        
 
         //creates array of random unique numbers = to the # of questions
         var randarrq = [];
@@ -69,7 +43,7 @@
 
         var questnum = -1;
 		
-	    var mainSeconds = 50;
+	    var mainSeconds = 100;
 	    //start time - enter 300 for 30 seconds, enter 450 for 45 seconds, etc;
 	    var seconds = mainSeconds;
 		
@@ -81,7 +55,9 @@
 	    function answered (optionClicked) {
   	        checkAnswer(optionClicked);
   	        updateScore();
-  	        //resetTimer();
+            disableButtons();
+            enableButtonsAfterDelay();
+  	       
   	    }
 
 	    function checkAnswer(optionClicked) {
@@ -95,10 +71,26 @@
 	    function updateScore () {
 	        if (rightOrWrong == 'right') {
 	            score += seconds;
-	            console.log("Current score = " + score);
+                console.log("Current score = " + score);
                 document.getElementById("totalscore").innerHTML = "Score = " + score;
 	        }
 	    }
+
+        function disableButtons () {
+            document.getElementById("a1").disabled=true;
+            document.getElementById("a2").disabled=true;
+            document.getElementById("a3").disabled=true;
+            document.getElementById("a4").disabled=true;
+        }
+
+        function enableButtonsAfterDelay() {
+            setTimeout(function() {
+                document.getElementById("a1").disabled=false;
+                document.getElementById("a2").disabled=false;
+                document.getElementById("a3").disabled=false;
+                document.getElementById("a4").disabled=false;
+            }, 1000);
+        }
 
 	    function resetTimer() {
 
@@ -241,45 +233,10 @@
 			
 
             $(".answer").on("click", function(){
-               
+                
                 $(this).next().fadeIn(100).delay(500).fadeOut(500, newquestion);
 				resetTimer();
             });
 			
 
         });
-
-
-	   
-
-
-   
-
-</script>
-<style>
-
-</style>
-</head>
-
-<body>
-
-	<div id = "outercontainer">
-		<div id = "start">click here start</div	>
-		<div id = "timer"><span id="countdown" class="timer"></span></div>
-		<div id = "quizspace">
-			<div id = "question"></div>
-			<button id ="a1" class = "answer" onclick="answered(1)" ></button><div id = "check1" class ="result"></div>
-			<button id ="a2" class = "answer" onclick="answered(2)" ></button><div id = "check2" class ="result"></div>
-			<button id ="a3" class = "answer" onclick="answered(3)"></button><div id = "check3" class ="result"></div>
-			<button id ="a4" class = "answer" onclick="answered(4)"></button><div id = "check4" class ="result"></div>
-
-		</div>
-		<div id = "gameover">Game Over
-
-			<div id = "totalscore"></div>
-		</div>
-
-	</div>
-
-</body>
-</html>

@@ -37,10 +37,7 @@
 
         //array of other arrays
         var anstype = [realans,fakeans1,fakeans2,fakeans3];
-        // anstype[0] = realans;
-        // anstype[1] = fakeans1;
-        // anstype[2] = fakeans2;
-        // anstype[3] = fakeans3;
+        
 
         //creates array of random unique numbers = to the # of questions
         var randarrq = [];
@@ -76,8 +73,7 @@
 	    //start time - enter 300 for 30 seconds, enter 450 for 45 seconds, etc;
 	    var seconds = mainSeconds;
 		
-	    //var countdownTimer = setInterval('secondPassed()', 1000);
-//var countdownTimer = setInterval('secondPassed()', 100);
+	    
 	    var score = 0;
 	    var rightOrWrong = '';
 
@@ -87,7 +83,7 @@
   	        updateScore();
             disableButtons();
             enableButtonsAfterDelay();
-  	        //resetTimer();
+  	       
   	    }
 
 	    function checkAnswer(optionClicked) {
@@ -228,10 +224,7 @@
 			
             $("#start").on("click",function(){
 			   
-                // randarra = [];
-//                 randanswer();
-//                 questnum = questnum + 1;
-//                 realquestnum = questnum + 1;
+               
 			     secondPassed = function() {
 
 			        //converts our 'seconds' variable into minutes, although we're not using this value anywhere
@@ -249,9 +242,7 @@
 			        if (seconds != 0) {
 			            seconds--;
 			        } 
-					// else if (gameStatus = 'over') {
-// 			        	resetTimer();
-			        // }
+					
 					else{
 			            //time is up
 						newquestion();
@@ -268,10 +259,7 @@
 			
 
             $(".answer").on("click", function(){
-                // randarra = [];
-//                 randanswer();
-//                 questnum = questnum + 1;
-//                 realquestnum = questnum + 1;
+                
                 $(this).next().fadeIn(100).delay(500).fadeOut(500, newquestion);
 				resetTimer();
             });
@@ -280,59 +268,7 @@
         });
 
 
-	    // var countdownTimer = setInterval('secondPassed()', 100);
-    // 
-    	    // var score = 0;
- //    	    var rightOrWrong = '';
- //    
- //    	    function answered (optionClicked) {
- //    	        checkAnswer(optionClicked);
- //    	        updateScore();
- //    	        resetTimer();
- //    	    }
- //    
- //    	    function checkAnswer(optionClicked) {
- //    	        if (optionClicked == correctOption) {
- //    	            rightOrWrong = 'right';
- //    	        } else {
- //    	            rightOrWrong = 'wrong';
- //    	        }
- //    	    }
- //    
- //    	    function updateScore () {
- //    	        if (rightOrWrong == 'right') {
- //    	            score += seconds;
- //    	            console.log("Current score = " + score);
- //    	        }
- //    	    }
-    
-    	    // function resetTimer() {
-    	    //     
-    	    //     clearInterval(countdownTimer);
-    	    //     
-    	    //     if (gameStatus == 'running') {
-    	    //         //execute the function 'startTimer' after the given delay
-    	    //         setTimeout(function(){startTimer()},1000);
-    	    //     } else if (gameStatus == 'over') {
-    	    //         hideTimer();
-    	    //     }
-    	    //     
-    	    // }
-    // 
-    // 	    function startTimer () {
-    // 	        seconds = mainSeconds;
-    // 	        countdownTimer = setInterval('secondPassed()', 100);
-    // 	    }
-    // 
-    // 	    function hideTimer () {
-    // 	        seconds = mainSeconds;
-    // 	        document.getElementById('countdown').innerHTML  = '';
-    // 	    }
-
-
-
-//<!--Drew's script ends. -->
-//<!--Javan's script for timer and scoring begins -->
+	    
 
 
    
@@ -345,7 +281,7 @@
 
 <body>
 
-	<div id = "outercontainer">
+	<div id = "quizbox">
 		<div id = "start">click here start</div	>
 		<div id = "timer"><span id="countdown" class="timer"></span></div>
 		<div id = "quizspace">

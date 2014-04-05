@@ -60,29 +60,6 @@ h2{
 	line-height:25px;
 } 
 
-//.navigation {
-	text-align:center;
-	color:white;
-	float:left;
-	padding-right:19px;
-	padding-left:28px;
-	height:25px;
-
-	//width:100px;
-	//border-style:solid;
-}
-	
-//#navigation a {
-	color:white;
-	text-decoration:none;
-	//margin-right:19px;
-	//margin-left:18px;
-}
-
-//.navigation:hover{
-	background-color:white;
-	color:black;
-}
 
 nav * {
 	padding:0;margin:0;
@@ -332,6 +309,68 @@ nav ul ul li a:hover {
 	float:right;
 	margin-top:-231px;
 	}
+	
+#highscores{
+	height:auto;
+	width:700px;
+	//border-style:solid;
+	}
+	
+.scorerow {
+	margin-left:5px;
+	width:695px;
+	height:auto;
+	background-color:white;
+	margin-top:5px;
+	
+	
+
+}
+
+.green {
+	
+	background-color: rgb(80,187,65);;
+	
+
+}
+
+.count {
+	width:100px;
+	float:left;
+	//border-style:solid;
+	background-color:inherit;
+	text-align:center;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}		
+
+.nickname{
+	width:200px;
+	float:left;
+	background-color:inherit;
+}
+
+.score {
+	width:150px;
+	float:left;
+	background-color:inherit;
+}
+
+.timestamp {
+	width:240px;
+	float:left;
+	background-color:inherit;
+	-webkit-border-top-right-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	-moz-border-radius-topright: 5px;
+	-moz-border-radius-bottomright: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
 	
 #thriveleaderboard{
 	width: 290px;
