@@ -1,4 +1,4 @@
-BillionaireBootcamp
+#BillionaireBootcamp#
 ===================
 
 The Billionaire Bootcamp group
@@ -29,8 +29,13 @@ cd into that new folder.
 Now you are connected to the repository.
 
 
+## How to copy repository content ##
 
-If you wish to add things.
+go to folder via changing directories that you cloned earlier called BillionaireBootcamp
+
+once in the folder type: git pull
+
+##If you wish to add things.##
 
 git status lists all the things that are new in your folder or have been updated. 
 
@@ -39,3 +44,11 @@ git add [file] preps a file to be added
 git commit -m [some message in quotes] commits your files.
 
 git push will push the files to the repository.
+
+
+Made my Alexander Silberman
+Ganesh Sundar
+Drew Terry
+Erika Ignacio
+Javan Shah
+Vinay Joshi
