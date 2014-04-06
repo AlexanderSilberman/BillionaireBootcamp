@@ -45,6 +45,31 @@ git commit -m [some message in quotes] commits your files.
 
 git push will push the files to the repository.
 
+##Common Problems (for me at least)##
+
+The need to keep doing git pull origin master instead of just git pull can be dealt with by doing git branch --set-upstream-to=origin/master master
+
+That will set tracking for the main branch.
+
+
+Need to merge and get a weird doc you can't do stuff with.
+
+Github is opening a document software called vim to put the commit message in. You need to:
+1. Press i
+2. Write your merge commit
+3. Press Esc
+4: Press :wq and then press enter
+
+That will write and quit the program
+
+
+Alternatively
+
+You can set the program as emacs by doing
+
+git config --global core.editor "emacs"
+
+Then when it opens up you can just write it and then do Control X and then Control S to save. Then Control X and then Control C to close it. 
 
 Made my Alexander Silberman
 Ganesh Sundar
