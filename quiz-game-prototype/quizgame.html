@@ -37,7 +37,7 @@
 
         //array of other arrays
         var anstype = [realans,fakeans1,fakeans2,fakeans3];
-       
+        
 
         //creates array of random unique numbers = to the # of questions
         var randarrq = [];
@@ -83,7 +83,7 @@
   	        updateScore();
             disableButtons();
             enableButtonsAfterDelay();
-  	        //resetTimer();
+  	       
   	    }
 
 	    function checkAnswer(optionClicked) {
@@ -259,7 +259,7 @@
 			
 
             $(".answer").on("click", function(){
-               
+                
                 $(this).next().fadeIn(100).delay(500).fadeOut(500, newquestion);
 				resetTimer();
             });
@@ -268,7 +268,7 @@
         });
 
 
-	   
+	    
 
 
    
@@ -281,7 +281,7 @@
 
 <body>
 
-	<div id = "outercontainer">
+	<div id = "quizbox">
 		<div id = "start">click here start</div	>
 		<div id = "timer"><span id="countdown" class="timer"></span></div>
 		<div id = "quizspace">

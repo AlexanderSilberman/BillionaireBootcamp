@@ -17,18 +17,9 @@
 <body>
 	
 	<?php
-	$con=mysqli_connect("localhost","root","root","billionaire_bootcamp");
-
-	// Check connection
-	if (mysqli_connect_errno())
-	  {
-	  echo "Failed to connect to MySQL: " . mysqli_connect_error();
-	  }
-
-	mysqli_close($con);
-	
-	
-	echo "hello this is a test";
+		
+	include 'includes/quizgamesql.php';
+		
 	?>
 	
 
@@ -77,7 +68,6 @@
                 
         </ul>
     <br style="clear:both" />
-    </nav>
     </div> 
 
 
@@ -86,7 +76,7 @@
 	</div> 
      
 
-</div>
+
 
 
 <div id = "outercontainer">
@@ -121,11 +111,10 @@
 
 <div id="main">
 
-<div id="main">
 
     <div id="gamepagetitle"> Billionaire Trivia</div>
     
-    <div style ="clear:both;"/> </div>
+    <div style ="clear:both;"> </div>
     
 	<div id = "quizbox">
 		<div id = "start">click here start</div	>
@@ -149,18 +138,41 @@
   <br /> <strong>Instructions:</strong> Answer the maximum amount of finance questions in the shortest amount of time to get the highest score!
 
 	
-    <div style="clear:both" /> </div>
+    <div style="clear:both"> </div>
     <br />
     
+	
+	</div>
+	<div id = "highscores">
+		<?php
+		
+		
+		$i = 1;
+		$count = 1;
+		$colors = array('scorerow','scorerow green');
+		
+		echo "<strong><div class = 'scorerow white'><div class = 'count'>Rank</div><div class = 'nickname'> Name </div><div class = 'score'>Score</div><div class = 'timestamp'>Date</div></div></strong><br/><br/>";
+		
+		while ($row = mysql_fetch_array($results)){
+			echo "<div class = '" . $colors[$i++ % 2] . "'><div class = 'count'>". $count++ . ".</div><div class = 'nickname'> ". $row["nickname"] .  "</div><div class = 'score'>" . $row["score"]. "</div><div class = 'timestamp'>" . $row["timestamp"] ."</div></div><br/>";
+			
+		}
+		
+		
+		
+		
+		?>
+		
+	</div>
 
 </div>
 
 </div>
 
-</div>
 
-</div>
-    <div style="clear:both" /> </div>
+
+
+    <div style="clear:both" > </div>
 
 <div id="footer">
 

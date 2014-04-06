@@ -72,6 +72,13 @@
 	font-size:21px;
 	float:right;
 	}
+	
+#highscores{
+	height:400px;
+	width:400px;
+	border-style:solid;
+	}	
+	
 #footer{
 	width: 800px;
 	height:10px;
