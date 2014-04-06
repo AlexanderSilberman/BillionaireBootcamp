@@ -55,9 +55,13 @@ That will set tracking for the main branch.
 Need to merge and get a weird doc you can't do stuff with.
 
 Github is opening a document software called vim to put the commit message in. You need to:
+
 1. Press i
+
 2. Write your merge commit
+
 3. Press Esc
+
 4: Press :wq and then press enter
 
 That will write and quit the program
