@@ -1,6 +1,6 @@
         var correctOption = '';
         var gameStatus = '';
-
+		
         var questions = []; var realans = []; var fakeans1 = []; var fakeans2 = [];var fakeans3 = [];
         questions[0] = "this is a questions0"; 				realans[0] = "the answer0";       fakeans1[0] = "wrong0";   fakeans2[0] = "no0";    fakeans3[0] = "nope0";
         questions[1] = "this is another question2";         realans[1] = "the answer for 2";  fakeans1[1] = "bad2";     fakeans2[1] = "naw2";   fakeans3[1] = "bad2";
@@ -72,7 +72,7 @@
 	        if (rightOrWrong == 'right') {
 	            score += seconds;
                 console.log("Current score = " + score);
-                document.getElementById("totalscore").innerHTML = "Score = " + score;
+                //document.getElementById("totalscore").innerHTML = "Score = " + score;
 	        }
 	    }
 
@@ -122,6 +122,7 @@
             $(".result").hide();
             $("#timer").hide();
             $("#gameover").hide();
+			$("#gameoverwin").hide();
 
            
 
@@ -176,11 +177,18 @@
                         gameStatus = 'running';
 
                     } else {
-                        $("#gameover").fadeIn(500);
+                        
 						$("#timer").hide();
                         gameStatus = 'over';
                         resetTimer();
-                    }
+						$(".totalscore").html(score);
+					//checks end of game to make sure score is above certain score	
+						if(score >= highscorelimit){
+							$("#gameoverwin").fadeIn(500);
+						}else{
+							$("#gameover").fadeIn(500);
+						};
+                    };
 					
 					
 

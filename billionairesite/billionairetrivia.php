@@ -4,23 +4,31 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Billionaire Bootcamp</title>
+
+	<?php
+		
+	include 'includes/quizgamesql.php';
+		
+	?>
 <link rel="stylesheet" type="text/css" href="stylesheet.css" />
 <link rel="stylesheet" type="text/css" href="../quiz-game-prototype/quizup.css" />
 
     <!-- Link your jQuery Library first -->
     <script src="../quiz-game-prototype/jquery-2.0.3.min.js"></script>
 	
-	<script src = "../quiz-game-prototype/quizup.js"></script>
+	
+	
+	
 
 </head>
 
 <body>
 	
-	<?php
-		
-	include 'includes/quizgamesql.php';
-		
-	?>
+	
+	
+ 	
+	
+	
 	
 
 <div id="header">
@@ -129,13 +137,22 @@
 		</div>
 		<div id = "gameover">Game Over
 
-			<div id = "totalscore"></div>
+			<div class = "totalscore"></div>
+		</div>
+		
+		<div id = "gameoverwin">Game Over
+
+			<div class = "totalscore"></div>
+			<br/>
+			
+			<input type = "text" placeholder = "input your name"></input>
+			
 		</div>
 
 	</div>
     
     <div class="gameinstructions">
-  <br /> <strong>Instructions:</strong> Answer the maximum amount of finance questions in the shortest amount of time to get the highest score!
+  	<br /> <strong>Instructions:</strong> Answer the maximum amount of finance questions in the shortest amount of time to get the highest score!
 
 	
     <div style="clear:both"> </div>
@@ -147,7 +164,7 @@
 		<?php
 		
 		
-		$i = 1;
+		$i = 0;
 		$count = 1;
 		$colors = array('scorerow','scorerow green');
 		
@@ -162,6 +179,19 @@
 		
 		
 		?>
+		
+		
+	 	<?php
+
+	 	    
+			$highscorelim = mysql_result($results, 4);
+
+	 	?>
+	 	<script>
+	     var highscorelimit =  <? echo $highscorelim ?>.;
+
+	    console.log(highscorelimit);
+	 	</script>
 		
 	</div>
 
@@ -188,5 +218,8 @@
 <div style="display: block; font-family: Verdana, Geneva, Arial; font-size: 10px">
 The University of Southern California does not screen or control the content on this website and thus does not guarantee the accuracy, integrity, or quality of such content.  All content on this website is provided by and is the sole responsibility of the person from which such content originated, and such content does not necessarily reflect the opinions of the University administration or the Board of Trustees
 </div>
+
+
+<script src = "../quiz-game-prototype/quizup.js"></script>
 </body>
 </html>
