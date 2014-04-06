@@ -54,3 +54,11 @@ text-align:center;
 	border-style:solid;
 	margin:auto;
 }
+
+#gameoverwin {
+	height:300px;
+	width:400px;
+	border-style:solid;
+	background-color:green;
+	margin:auto;
+}
