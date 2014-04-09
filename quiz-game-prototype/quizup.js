@@ -182,6 +182,7 @@
                         gameStatus = 'over';
                         resetTimer();
 						$(".totalscore").html(score);
+						$("#finalscore").val(score);
 					//checks end of game to make sure score is above certain score	
 						if(score >= highscorelimit){
 							$("#gameoverwin").fadeIn(500);
