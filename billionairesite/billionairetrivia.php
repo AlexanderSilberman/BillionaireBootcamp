@@ -179,7 +179,7 @@
 		echo "<strong><div class = 'scorerow white'><div class = 'count'>Rank</div><div class = 'nickname'> Name </div><div class = 'score'>Score</div><div class = 'timestamp'>Date</div></div></strong><br/><br/>";
 		
 		while ($row = mysql_fetch_array($results)){
-			echo "<div class = '" . $colors[$i++ % 2] . "'><div class = 'count'>". $count++ . ".</div><div class = 'nickname'> ". $row["nickname"] .  "</div><div class = 'score'>" . $row["score"]. "</div><div class = 'timestamp'>" . $row["timestamp"] ."</div></div><br/>";
+			echo "<div class = '" . $colors[$i++ % 2] . "'><div class = 'count'>". $count++ . ".</div><div class = 'nickname'> ". $row["user_name"] .  "</div><div class = 'score'>" . $row["score"] . "</div><div class = 'timestamp'>" . $row["score_time"] . "</div></div><br/>";
 			
 		}
 		
@@ -192,11 +192,11 @@
 	 	<?php
 
 	 	    
-			$highscorelim = mysql_result($results, 8);
+			$highscorelim = mysql_result($results, 9);
 
 	 	?>
 	 	<script>
-	     var highscorelimit =  <? echo $highscorelim ?>.;
+	     var highscorelimit =  <? echo $highscorelim ?>
 
 	    console.log(highscorelimit);
 	 	</script>
