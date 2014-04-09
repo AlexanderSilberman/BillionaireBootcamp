@@ -12,24 +12,14 @@
      
 	$name = $_REQUEST["playername"];
 	        	
-	$thesql = "INSERT INTO user (nickname) 
-				VALUES ('$name');
-				
-	";
 	
 	$endscore = $_REQUEST["finalscore"];
 	
-	$thesqltwo = "INSERT INTO user_scores (game_id, score) 
-	VALUES (2, $endscore)";
+	$thesqltwo = "INSERT INTO quiz_game_scores (user_name, score) 
+	VALUES ('$name', $endscore)";
 		
-	echo "The SQL was" . $thesql;
-            	
-	$results = mysql_query($thesql);
-            	
-	if (!$results) {
-		 		echo "THERE was a PROBLEM! Error: " . mysql_error();
-		 	exit();
-	}    
+	echo "The SQL was" . $thesqltwo;
+  
 	
 	
 	$resultstwo = mysql_query($thesqltwo);

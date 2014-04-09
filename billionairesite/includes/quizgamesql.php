@@ -9,11 +9,11 @@
 
 	mysql_select_db("billionaire_bootcamp", $dbconnection); 
 
-	$thesql = "SELECT user_scores.score, user.nickname, timestamp  
-				FROM user_scores, user
-		 		WHERE user.user_id = user_scores.user_id
-				AND user_scores.game_id = 2
-				ORDER BY score DESC
+	$thesql = "SELECT quiz_game_scores.score, quiz_game_scores.user_name, score_time 
+				FROM quiz_game_scores
+		 		-- WHERE user.user_id = user_scores.user_id
+-- 				AND user_scores.game_id = 2
+				ORDER BY quiz_game_scores.score DESC
 				LIMIT 0,10";
 				
 
