@@ -79,6 +79,10 @@
 	border-style:solid;
 	}	
 	
+form #finalscore {
+	display:none;
+}	
+	
 #footer{
 	width: 800px;
 	height:10px;
