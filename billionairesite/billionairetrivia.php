@@ -144,8 +144,16 @@
 
 			<div class = "totalscore"></div>
 			<br/>
+				<form action = "insertname.php">
+					<input type = "text" placeholder = "input your name" name = "playername"></input>
+					<input type = "submit" value = "Submit Your Score!">
+					<input id = "finalscore" type = "hidden" name = "finalscore"></input>
+				</form>
 			
-			<input type = "text" placeholder = "input your name"></input>
+			
+				
+				
+			
 			
 		</div>
 
@@ -184,7 +192,7 @@
 	 	<?php
 
 	 	    
-			$highscorelim = mysql_result($results, 4);
+			$highscorelim = mysql_result($results, 8);
 
 	 	?>
 	 	<script>
