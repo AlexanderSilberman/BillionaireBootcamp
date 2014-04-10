@@ -26,24 +26,24 @@
 	<div id="menubox">
     	<div id="menu">
     		<ul>
-        		<li>  <a href="/BillionaireBootcamp/billionairesite" class="narrow selected">  Home  </a>  </li>
-            	<li>  <a href="/BillionaireBootcamp/billionairesite/games/index.php"> Games </a>  
+        		<li>  <a href="/BillionaireBootcamp/billionairesite" class="home narrow">  Home  </a>  </li>
+            	<li>  <a href="/BillionaireBootcamp/billionairesite/games/index.php" class = "game"> Games </a>  
             		<ul> 
                 		<li> <a href="/BillionaireBootcamp/billionairesite/games/thrivebudget.php"> Thrive Budget </a> </li>
                 		<li> <a href="/BillionaireBootcamp/billionairesite/games/billionairetrivia.php"> Billionaire Trivia </a> </li>
                 	</ul>
             	</li>
             
-           		<li>  <a href="/BillionaireBootcamp/billionairesite/students/index.php">  Student Resources </a>  
+           		<li>  <a href="/BillionaireBootcamp/billionairesite/students/index.php" class = "student">  Student Resources </a>  
  					 <ul>
                 		<li> <a href="/BillionaireBootcamp/billionairesite/students/investing.php">  Investing Mistakes  </a> </li>
 						<li> <a href="/BillionaireBootcamp/billionairesite/students/cookupprofits.php">  Cooking up Profits  </a> </li>
                 	 </ul>	
             	</li> 
             
-           	 	<li> <a href="/BillionaireBootcamp/billionairesite/teacher/index.php">  Teacher Resources </a> </li>
-  				<li> <a href="/BillionaireBootcamp/billionairesite/about/index.php" class="narrow">  About </a> </li>
-           	 	<li> <a href="/BillionaireBootcamp/billionairesite/contact/index.php" class="narrow">  Contact </a> </li>
+           	 	<li> <a href="/BillionaireBootcamp/billionairesite/teacher/index.php" class = "teacher">  Teacher Resources </a> </li>
+  				<li> <a href="/BillionaireBootcamp/billionairesite/about/index.php" class="about narrow">  About </a> </li>
+           	 	<li> <a href="/BillionaireBootcamp/billionairesite/contact/index.php" class="contact narrow">  Contact </a> </li>
                 
        		 </ul>
     <br style="clear:both" />

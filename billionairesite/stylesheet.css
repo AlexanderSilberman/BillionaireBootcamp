@@ -383,7 +383,7 @@ nav ul ul li a:hover {
 	width:600px;
 	height:auto;
 	background-color:white;
-	margin-top:5px;
+	margin-top:4px;
 	font-size:.9em;
 	
 	
@@ -654,4 +654,13 @@ textarea {
 	font-weight:bold;
 	text-align:center;
 	padding-bottom:5px;
+}
+
+
+
+#home .home, #about .about, #contact .contact, #game .game, #student .student, #teacher .teacher{
+	
+	background-color:white;
+	color:black;
+	
 }

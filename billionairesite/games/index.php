@@ -15,7 +15,7 @@
 
 </head>
 
-<body>
+<body id = "game">
 
 
 <div id = "outercontainer">
@@ -56,7 +56,7 @@
     <div style ="clear:both;"/> </div>
     
 	<div id="thrivebudget"> 
-    <a href="BillionaireBootcamp/billionairesite/games/thrivebudget.php"><img src="thrivebudget.PNG" class="gameplaceholderimage" /></a>
+    <a href="/BillionaireBootcamp/billionairesite/games/thrivebudget.php"><img src="thrivebudget.PNG" class="gameplaceholderimage" /></a>
     </div>
 	
     <div style="clear:both" /> </div>

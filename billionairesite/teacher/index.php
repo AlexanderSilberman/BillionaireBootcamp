@@ -12,7 +12,7 @@
 
 </head>
 
-<body>
+<body id = "teacher">
 
 <div id = "outercontainer">
 	
