@@ -6,43 +6,13 @@
 <title>Billionaire Bootcamp</title>
 <link rel="stylesheet" type="text/css" href="stylesheet.css" />
 
+         <?php
+		 	include "includes/navbar.php";
+		 ?>
+
 </head>
 
 <body>
-
-<div id="header">
-
-
-	<div id="top">
-	<img src="finallogo.png" 
-	style="width:280px; height:180px; float:left; margin-left:-45px; margin-top:-27px" /> 
-	
-    <br /><br /><br />
-    
-    <form id="login">
-    <input type="text" name="username" placeholder = "username" class = "login" autofocus />
-    <input type="password" name="password" placeholder = "password" class = "login" />
-    <input type="Submit" name="login" class = "submitbutton" value = "login" />
-    <input type="Submit" name="create" class = "submitbutton" value = "create account" />
-    
-    </form>
-
-	</div>
-
-	<br /><br />
-
-    <div id="navigation">
-      
-          <a href="homepage.html"><div class="navigation">  Home  </div></a> 
-          <a href="games.html"><div class="navigation">  Games  </div></a>   
-          <a href="student.html"><div class="navigation selected">  Student Resources </div></a>  
-          <a href="teacher.html"><div class="navigation">  Teacher Resources </div></a>
-          <a href="about.html"><div class="navigation">  About </div></a> 
-          <a href="contact.html"><div class="navigation">  Contact </div></a>
-	</div> 
-     
-
-</div>
 
 
 <div id = "outercontainer">
@@ -77,28 +47,27 @@
 
 <div id="main">
 
-    <div id="aboutwebsite">
-    <span style="font-size:30px;">Top 11 Investing Mistakes</span>
-    <p>Mistake # 1: Following Analyst Recommendations</p>
-    <p>Mistake # 2: Bankruptcy Buying</p>
-    <p>Mistake # 3: Scooping Up “Pet Rocks”</p>
-    <p>Mistake # 4: Chasing Hot Tips</p>
-    <p>Mistake # 5: Taking “Sure Shots”</p>
-    <p>Mistake # 6: Panicking (or Swooning) over Front Page
-Headlines
-</p>
-    <p>Mistake # 7: Falling for Company Hype</p>
-    <p>Mistake # 8: Having Blind Faith</p>
-    <p>Mistake # 9: Betting on the “Hail Mary” Investment</p>
-    <p>Mistake # 10: Keeping Too Much Stock in Your Employer’s
-Company</p>
-    <p>Mistake # 11: Employing Friends and Lovers</p>
- 
-    
-    </div>
-    
+	<p id="contact"> 
+    Have a question or comment? We would love to hear it! 
+   	<br />
+    Please fill out the form below with your information or your message. 
+    </p>
     <br />
-</div>
+
+	<form id="contactinfo">
+    <label> First Name </label>
+    	<input type="text" placeholder= "John" name="firstname" autofocus="autofocus" /> <br />
+    <label> Last Name </label>
+    	<input type="text" placeholder="Smith" name="lastname" /> <br />
+    <label> Email Address </label>
+    	<input type="email" placeholder="john.smith@gmail.com" name="email" /> <br />
+    <label> Message Subject </label>
+    	<input type="text" placeholder="Where can I find more about your books?" name="subject" size="40"/> <br />
+    <label> Your Message </label>
+    	<textarea placeholder="Message content" name="message" style="width:300px; height:200px;"></textarea> <br /> <br />
+    
+    <input type="Submit" name="Submit" class = "submitbutton" value = "Submit" style="margin-left:400px;"/>
+    </form>
 
 </div>
 

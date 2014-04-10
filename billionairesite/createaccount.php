@@ -6,65 +6,13 @@
 <title>Billionaire Bootcamp</title>
 <link rel="stylesheet" type="text/css" href="stylesheet.css" />
 
+         <?php
+		 	include "includes/navbar.php";
+		 ?>
+
 </head>
 
 <body>
-
-<div id="header">
-
-
-	<div id="top">
-	<img src="finallogo.png" style="float:left;" /> 
-	
-    <br /><br /><br />
-    
-    <form id="login">
-    <input type="text" name="username" placeholder = "username" class = "login" autofocus />
-    <input type="password" name="password" placeholder = "password" class = "login" />
-    <input type="button" name="login" class = "submitbutton" value = "login" onclick="document.location='myaccount.html'">
-     <input type="button" name="create" class = "submitbutton" value = "create account" onclick="document.location='createaccount.html'">    
-    </form>
-
-	</div>
-
-	<br /><br />
-
-    <div id="navigation">
-      
-         <div id="menubox">
-    <div id="menu">
-    	<ul>
-        	<li>  <a href="homepage.html" class="narrow">  Home  </a>  </li>
-            <li>  <a href="games.html"> Games </a>  
-            	<ul> 
-                	<li> <a href="thrivebudget.html"> Thrive Budget </a> </li>
-                	<li> <a href="billionairetrivia.html"> Billionaire Trivia </a> </li>
-                </ul>
-            </li>
-            
-            <li>  <a href="student.html">  Student Resources </a>  
- 				<ul>
-                	<li> <a href="investing.html">  Investing Mistakes  </a> </li>
-					<li> <a href="cookupprofits.html">  Cooking up Profits  </a> </li>
-                </ul>	
-            </li> 
-            
-            <li> <a href="teacher.html">  Teacher Resources </a> </li>
-  			<li> <a href="about.html" class="narrow">  About </a> </li>
-            <li> <a href="contact.html" class="narrow selected">  Contact </a> </li>
-                
-        </ul>
-    <br style="clear:both" />
-    </nav>
-    </div> 
-
-
-</div>  <!-- end of menu -->
-</div> <!-- end of menubox -->
-	</div> 
-     
-
-</div>
 
 
 <div id = "outercontainer">
@@ -99,28 +47,30 @@
 
 <div id="main">
 
-	<p id="contact"> 
-    Have a question or comment? We would love to hear it! 
-   	<br />
-    Please fill out the form below with your information or your message. 
-    </p>
-    <br />
-
-	<form id="contactinfo">
+    <div id="aboutwebsite"><span style="font-size: 30px; margin-left:210px;">Create Account</span><br /><br />
+     <form id="contactinfo">
     <label> First Name </label>
     	<input type="text" placeholder= "John" name="firstname" autofocus="autofocus" /> <br />
     <label> Last Name </label>
     	<input type="text" placeholder="Smith" name="lastname" /> <br />
     <label> Email Address </label>
     	<input type="email" placeholder="john.smith@gmail.com" name="email" /> <br />
-    <label> Message Subject </label>
-    	<input type="text" placeholder="Where can I find more about your books?" name="subject" size="40"/> <br />
-    <label> Your Message </label>
-    	<textarea placeholder="Message content" name="message" style="width:300px; height:200px;"></textarea> <br /> <br />
+    	<br /><br />
     
-    <input type="Submit" name="Submit" class = "submitbutton" value = "Submit" style="margin-left:400px;"/>
+    <input type="Submit" name="Submit" class = "submitbutton" value = "Submit" style="margin-left:310px;"/>
+    
+    
     </form>
 
+
+
+
+    </div>
+    
+    <br />
+    
+    <div id="aboutnatalie"></div>
+</div>
 </div>
 
 </div>

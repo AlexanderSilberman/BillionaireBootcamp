@@ -1,40 +1,18 @@
 
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Billionaire Bootcamp</title>
 <link rel="stylesheet" type="text/css" href="stylesheet.css" />
-<link rel="stylesheet" type="text/css" href="../quiz-game-prototype/quizup.css" />
 
-    <!-- Link your jQuery Library first -->
-    <script src="../quiz-game-prototype/jquery-2.0.3.min.js"></script>
-	
-	<script src = "../quiz-game-prototype/quizup.js"></script>
+         <?php
+		 	include "includes/navbar.php";
+		 ?>
 
 </head>
 
 <body>
-	
-	<?php
-	$con=mysqli_connect("localhost","root","root","billionaire_bootcamp");
-
-	// Check connection
-	if (mysqli_connect_errno())
-	  {
-	  echo "Failed to connect to MySQL: " . mysqli_connect_error();
-	  }
-
-	mysqli_close($con);
-	
-	
-	echo "hello this is a test";
-	
-	
-		 	include "includes/navbar.php";
-
-	?>
-	
 
 
 <div id = "outercontainer">
@@ -69,40 +47,27 @@
 
 <div id="main">
 
-<div id="main">
-
-    <div id="gamepagetitle"> Billionaire Trivia</div>
+    <div id="aboutwebsite">
+    <span style="font-size:30px;">Top 11 Investing Mistakes</span>
+    <p>Mistake # 1: Following Analyst Recommendations</p>
+    <p>Mistake # 2: Bankruptcy Buying</p>
+    <p>Mistake # 3: Scooping Up “Pet Rocks”</p>
+    <p>Mistake # 4: Chasing Hot Tips</p>
+    <p>Mistake # 5: Taking “Sure Shots”</p>
+    <p>Mistake # 6: Panicking (or Swooning) over Front Page
+Headlines
+</p>
+    <p>Mistake # 7: Falling for Company Hype</p>
+    <p>Mistake # 8: Having Blind Faith</p>
+    <p>Mistake # 9: Betting on the “Hail Mary” Investment</p>
+    <p>Mistake # 10: Keeping Too Much Stock in Your Employer’s
+Company</p>
+    <p>Mistake # 11: Employing Friends and Lovers</p>
+ 
     
-    <div style ="clear:both;"/> </div>
+    </div>
     
-	<div id = "quizbox">
-		<div id = "start">click here start</div	>
-		<div id = "timer"><span id="countdown" class="timer"></span></div>
-		<div id = "quizspace">
-			<div id = "question"></div>
-			<button id ="a1" class = "answer" onclick="answered(1)" ></button><div id = "check1" class ="result"></div>
-			<button id ="a2" class = "answer" onclick="answered(2)" ></button><div id = "check2" class ="result"></div>
-			<button id ="a3" class = "answer" onclick="answered(3)"></button><div id = "check3" class ="result"></div>
-			<button id ="a4" class = "answer" onclick="answered(4)"></button><div id = "check4" class ="result"></div>
-
-		</div>
-		<div id = "gameover">Game Over
-
-			<div id = "totalscore"></div>
-		</div>
-
-	</div>
-    
-    <div class="gameinstructions">
-  <br /> <strong>Instructions:</strong> Answer the maximum amount of finance questions in the shortest amount of time to get the highest score!
-
-	
-    <div style="clear:both" /> </div>
     <br />
-    
-
-</div>
-
 </div>
 
 </div>

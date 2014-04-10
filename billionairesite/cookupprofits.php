@@ -6,74 +6,13 @@
 <title>Billionaire Bootcamp</title>
 <link rel="stylesheet" type="text/css" href="stylesheet.css" />
 
+         <?php
+		 	include "includes/navbar.php";
+		 ?>
+
 </head>
 
 <body>
-
-
-<div id="header">
-
-
-	<div id="top">
-	<img src="finallogo.png" style="float:left;" /> 
-	
-    <br /><br /><br />
-    
-    <form id="login">
-    <input type="text" name="username" placeholder = "username" class = "login" autofocus />
-    <input type="password" name="password" placeholder = "password" class = "login" />
-    <input type="button" name="login" class = "submitbutton" value = "login" onclick="document.location='myaccount.html'">
-     <input type="button" name="create" class = "submitbutton" value = "create account" onclick="document.location='createaccount.html'">    
-    </form>
-
-	</div>
-
-	<br /><br />
-
-         <div id="navigation">
-      
-        <!--  <a href="homepage.html"><div class="navigation selected">  Home  </div></a> 
-          <a href="games.html"><div class="navigation">  Games  </div></a>   
-          <a href="student.html"><div class="navigation">  Student Resources </div></a>  
-          <a href="teacher.html"><div class="navigation">  Teacher Resources </div></a>
-          <a href="about.html"><div class="navigation">  About </div></a> 
-          <a href="contact.html"><div class="navigation">  Contact </div></a>
-	 	-->
-   <div id="menubox">
-    <div id="menu">
-    	<ul>
-        	<li>  <a href="homepage.html" class="narrow">  Home  </a>  </li>
-            <li>  <a href="games.html"> Games </a>  
-            	<ul> 
-                	<li> <a href="thrivebudget.html"> Thrive Budget </a> </li>
-                	<li> <a href="billionairetrivia.html"> Billionaire Trivia </a> </li>
-                </ul>
-            </li>
-            
-            <li>  <a href="student.html" class="selected">  Student Resources </a>  
- 				<ul>
-                	<li> <a href="investing.html">  Investing Mistakes  </a> </li>
-					<li> <a href="cookupprofits.html">  Cooking up Profits  </a> </li>
-                </ul>	
-            </li> 
-            
-            <li> <a href="teacher.html">  Teacher Resources </a> </li>
-  			<li> <a href="about.html" class="narrow">  About </a> </li>
-            <li> <a href="contact.html" class="narrow">  Contact </a> </li>
-                
-        </ul>
-    <br style="clear:both" />
-    </nav>
-    </div> 
-
-
-</div>  <!-- end of menu -->
-</div> <!-- end of menubox -->
-    
-    </div> 
-
-
-</div>
 
 
 <div id = "outercontainer">

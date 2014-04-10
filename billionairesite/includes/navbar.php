@@ -1,5 +1,26 @@
  <php?
  
+ 
+ <div id="header">
+
+
+	<div id="top">
+	<img src="finallogo.png" style="float:left;" /> 
+	
+    <br /><br /><br />
+    
+    <!--<form id="login">
+    <input type="text" name="username" placeholder = "username" class = "login" autofocus />
+    <input type="password" name="password" placeholder = "password" class = "login" />
+    <input type="button" name="login" class = "submitbutton" value = "login" onclick="document.location='myaccount.html'">
+     <input type="button" name="create" class = "submitbutton" value = "create account" onclick="document.location='createaccount.html'">    
+    </form>-->
+
+	</div>
+
+	<br /><br />
+	
+	
  <div id="navigation">
 
 	<div id="menubox">
@@ -26,8 +47,8 @@
                 
        		 </ul>
     <br style="clear:both" />
-   	 	</div> <-- end of menu -->
+   	 	</div> <!-- end of menu -->
 	</div>  <!-- end of menubox -->
 </div> <!-- end of navbox-->
 
-?>
+
