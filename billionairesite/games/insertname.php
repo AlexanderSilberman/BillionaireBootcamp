@@ -85,8 +85,9 @@
 	
 	This is the insert page.
 	
-</div>	
 	<a href = "billionairetrivia.php"><input type = "button" value = "Play Again!"></input>
+</div>
+
 
     <div style="clear:both"> </div>
     <br />
@@ -107,8 +108,6 @@
 		}
 		
 		
-		
-		
 		?>
 		
 		
@@ -124,12 +123,10 @@
 	    console.log(highscorelimit);
 	 	</script>
 		
-    </div>
+</div>
     
+</div>	
 	
-	//</div>
-	
-
 </div>
 
 </div>

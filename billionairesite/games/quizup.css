@@ -122,12 +122,25 @@
 	width:400px;
 	border-style:solid;
 	margin:auto;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 2em;
+	text-align:center;
 }
 
 #gameoverwin {
+	margin:auto;
+	text-align:center;
 	height:300px;
 	width:400px;
-	border-style:solid;
-	background-color:green;
-	margin:auto;
+	border-style:none;
+	background-color: rgb(209,229,172); 
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 2em;
+	
+}
+
+.totalscore{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 1.5em;
+	margin: auto;
 }

@@ -86,15 +86,19 @@
 		</div>
 		<div id = "gameover">Game Over
 
-			<div class = "totalscore"></div>
+			<div class = "totalscore">
+				Your total score is 
+			</div>
 		</div>
 		
-		<div id = "gameoverwin">Game Over
+		<div id = "gameoverwin">Game Over!
 
-			<div class = "totalscore"></div>
+			<div class = "totalscore">
+				Your total score is 
+			</div>
 			<br/>
 				<form action = "insertname.php">
-					<input type = "text" placeholder = "input your name" name = "playername"></input>
+					<input type = "text" placeholder = "Input your name" name = "playername" autofocus></input>
 					<input type = "submit" value = "Submit Your Score!">
 					<input id = "finalscore" type = "hidden" name = "finalscore"></input>
 				</form>
