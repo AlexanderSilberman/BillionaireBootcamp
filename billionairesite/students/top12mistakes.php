@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Billionaire Bootcamp</title>
+<title>12 Tips</title>
 <link rel="stylesheet" type="text/css" href="stylesheet.css" />
 
          <?php
@@ -12,7 +12,7 @@
 
 </head>
 
-<body>
+<body id = "student">
 
 <div id = "outercontainer">
 	

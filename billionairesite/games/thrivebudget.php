@@ -12,7 +12,7 @@
 
 </head>
 
-<body>
+<body id = "game">
 
 <div id = "outercontainer">
 	

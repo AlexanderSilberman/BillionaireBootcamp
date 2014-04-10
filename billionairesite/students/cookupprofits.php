@@ -4,15 +4,15 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Billionaire Bootcamp</title>
-<link rel="stylesheet" type="text/css" href="stylesheet.css" />
+<link rel="stylesheet" type="text/css" href="../stylesheet.css" />
 
          <?php
-		 	include "includes/navbar.php";
+		 	include "../includes/navbar.php";
 		 ?>
 
 </head>
 
-<body>
+<body id = "student">
 
 
 <div id = "outercontainer">
