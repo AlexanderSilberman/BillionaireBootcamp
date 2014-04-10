@@ -56,7 +56,7 @@
     <div style ="clear:both;"/> </div>
     
 	<div id="thrivebudget"> 
-    <a href="/BillionaireBootcamp/billionairesite/games/thrivebudget.php"><img src="thrivebudget.PNG" class="gameplaceholderimage" /></a>
+    <a href="/BillionaireBootcamp/billionairesite/games/thrivebudget.php"><img src="../images/thrivebudgetgame.PNG" class="gameplaceholderimage" /></a>
     </div>
 	
     <div style="clear:both" /> </div>
@@ -148,7 +148,7 @@
     <div style="clear:both" /> </div>
     
     <div id="thrivebudget"> 
-   <a href="/BillionaireBootcamp/billionairesite/games/billionairetrivia.php">	<img src="billionairetrivia.jpeg" class="gameplaceholderimage" /></a>
+   <a href="/BillionaireBootcamp/billionairesite/games/billionairetrivia.php">	<img src="../images/triviagame.PNG" class="gameplaceholderimage" /></a>
 
     </div>
     
@@ -167,90 +167,11 @@
 		
 	}
 	
-	
-	
-	
+
 	?>
 	
 	</div>
-   <!-- <table id="trivialeaderboard"> 
-	<tr>
-              <th>Rank</th>
-              <th>Last Name</th> 
-              <th>Points</th>
-              <th>Date</th>
-		</tr>
-        
-    	<tr>
-        	<td class="tablerank">1</td>
-            <td>jsmith</td>
-            <td>100 pts</td>
-			<td>3/10/14</td>
-        </tr>
-        
-        <tr>
-        	<td class="tablerank">2</td>
-            <td>jsmith</td>
-            <td>97 pts</td>
-			<td>3/10/14</td>
-        </tr>
-        
-        	<tr>
-        	<td class="tablerank">3</td>
-            <td>jsmith</td>
-            <td>95 pts</td>
-			<td>3/10/14</td>
-        </tr>
-        
-        <tr>
-        	<td class="tablerank">4</td>
-            <td>jsmith</td>
-            <td>90 pts</td>
-			<td>3/10/14</td>
-        </tr>
-        
-          <tr>
-        	<td class="tablerank">5</td>
-            <td>jsmith</td>
-            <td>85 pts</td>
-			<td>3/10/14</td>
-        </tr>
-        
-          <tr>
-        	<td class="tablerank">6</td>
-            <td>jsmith</td>
-            <td>80 pts</td>
-			<td>3/10/14</td>
-        </tr>
-        
-           <tr>
-        	<td class="tablerank">7</td>
-            <td>jsmith</td>
-            <td>75 pts</td>
-			<td>3/10/14</td>
-        </tr>
-        
-         <tr>
-        	<td class="tablerank">8</td>
-            <td>jsmith</td>
-            <td>75 pts</td>
-			<td>3/10/14</td>
-        </tr>
-        
-         <tr>
-        	<td class="tablerank">9</td>
-            <td>jsmith</td>
-            <td>75 pts</td>
-			<td>3/10/14</td>
-        </tr>
-        
-         <tr>
-        	<td class="tablerank">10</td>
-            <td>jsmith</td>
-            <td>75 pts</td>
-			<td>3/10/14</td>
-        </tr>
-    </table> ---->
+   
 
 </div>
 
