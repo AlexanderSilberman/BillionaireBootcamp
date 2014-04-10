@@ -70,12 +70,12 @@
     <div id="popularcontenttitle"> Popular Content</div>
     <div style="clear:both" /> </div>
     <div id="popularcontent"> 
-    <div class="popularcontenttitle"><a href="student.html">Top 12 Investing Mistakes</a></div>
+    <div class="popularcontenttitle"><a href="/BillionaireBootcamp/billionairesite/students/investing.php">Top 12 Investing Mistakes</a></div>
     <div class="popularcontentdescription">Find out what the most common mistakes people make when investing in stocks are from financial guru Natalie Pace.</div>
     </div>
     
     <div id="popularcontentright"> 
-    <div class="popularcontenttitle"><a href="student.html">How to Cook Up Profits</a></div>
+    <div class="popularcontenttitle"><a href="/BillionaireBootcamp/billionairesite/students/cookupprofits.php">How to Cook Up Profits</a></div>
     <div class="popularcontentdescription">Learn about the best ways to guarantee your bottom line when investing in stocks.</div>
     </div>
 
