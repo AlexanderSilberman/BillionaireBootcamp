@@ -52,8 +52,8 @@
     
     <div style ="clear:both;"/> </div>
     
-	<div class="gamepagegamecontainer"> 
-    <img src="thrivebudget.PNG" style="width:690px; height:400px;" />
+	<div class="gamepagegamecontainer" id="canvascontainer"> 
+    
     </div>
     
     <div class="gameinstructions">
@@ -68,6 +68,11 @@
 4. 20 percent spent on fun. (Half on immediate fun, like movies, fashion and dinners out, the other half on something you’ll have to save up for, like vacations, Jacuzzis, boats, etc.) 
 <br /><br />
 5. 50 percent for all your basic needs (including taxes, housing, food, clothing, etc.)
+<br /><br />
+Use the arrow keys to move.
+Space to interact.
+Esc to exit out of menus.
+<strong>Manage your cash, stress, and health.</strong>
 
 	
     <div style="clear:both" /> </div>
@@ -93,7 +98,7 @@
 </div>
 
 
-
+<script src="game.js"></script>
 
 </body>
 </html>
