@@ -2,11 +2,126 @@ var correctOption = '';
         var gameStatus = '';
 		
         var questions = []; var realans = []; var fakeans1 = []; var fakeans2 = [];var fakeans3 = [];
-       questions[0] = "What is the one question you should ask your Certified Financial Advisor before hiring him/her"; 				realans[0] = "How much of my portfolio should be in stocks";       fakeans1[0] = "Which Level of the CFA Exam have you passed?";   fakeans2[0] = "Can you pitch me a stock?";    fakeans3[0] = "What is your fee?v";
-        questions[1] = "How much of your nest egg should you keep safe?";         realans[1] = "A percentage equal to your age ";  fakeans1[1] = "A percentage twice your age";     fakeans2[1] = "A percentage half your age";   fakeans3[1] = "100%";
-        questions[2] = "What's safe?";     realans[2] = "Bonds";  fakeans1[2] = "Corporate debt";    fakeans2[2] = "CMBS loans";    fakeans3[2] = "Municipals";
-        questions[3] = "What is the average return of stocks over the last 10 and 30 years?";    realans[3] = "7.41% over the last 10 and 11.09% over the last 30";  fakeans1[3] = "50.00% over the last 10 and 90.00% over the last 30";   fakeans2[3] = "32.65% over the last 10 and 41.20 % over the last 30"; fakeans3[3] = "9.63% over the last 10 and 23.56% over the last 30";
-        questions[4] = "What is the average return of gold over the last 10 and 30 years?";   realans[4] = "11.09% over the last 10 and 3.84% over the last 30";  fakeans1[4] = "3.32% over the last 10 and 19.63% over the last 30";   fakeans2[4] = "9.63% over the last 10 and 6.69% over the last 30"; fakeans3[4] = "7.41% over the last 10 and 9.97% over the last 30";
+		questions[0] = "What is the one question you should ask your Certified Financial Advisor before hiring him/her"; 
+		realans[0] = "How much of my portfolio should be in stocks";
+		fakeans1[0] = "Which Level of the CFA Exam have you passed?";   
+		fakeans2[0] = "Can you pitch me a stock?";    
+		fakeans3[0] = "What is your fee?v";
+        
+		questions[1] = "How much of your nest egg should you keep safe?";
+		realans[1] = "A percentage equal to your age ";
+		fakeans1[1] = "A percentage twice your age";
+		fakeans2[1] = "A percentage half your age";
+		fakeans3[1] = "100%";
+
+		questions[2] = "What's safe?";
+		realans[2] = "Bonds";
+		fakeans1[2] = "Corporate debt";
+		fakeans2[2] = "CMBS loans";
+		fakeans3[2] = "Municipals";
+
+		questions[3] = "What is the average return of stocks over the last 10 and 30 years?";
+		realans[3] = "7.41% over the last 10 and 11.09% over the last 30";
+		fakeans1[3] = "50.00% over the last 10 and 90.00% over the last 30";
+		fakeans2[3] = "32.65% over the last 10 and 41.20 % over the last 30";
+		fakeans3[3] = "9.63% over the last 10 and 23.56% over the last 30";
+
+		questions[4] = "What is the average return of gold over the last 10 and 30 years?";
+		realans[4] = "11.09% over the last 10 and 3.84% over the last 30";
+		fakeans1[4] = "3.32% over the last 10 and 19.63% over the last 30";
+		fakeans2[4] = "9.63% over the last 10 and 6.69% over the last 30";
+		fakeans3[4] = "7.41% over the last 10 and 9.97% over the last 30";
+		
+		questions[5] = "What is the average return of real estate over the last 30 years?";
+		realans[5] = "5.74%";
+		fakeans1[5] = "9.97%";
+		fakeans2[5] = "6.69%";
+		fakeans3[5] = "2.10";
+
+		questions[6] = "What is the top performing investment, so far, in 2013?";
+		realans[6] = "NASDAQ";
+		fakeans1[6] = "Real este";
+		fakeans2[6] = "Gold";
+		fakeans3[6] = "Dow Jones";
+
+		questions[7] = "How long will it take for you to have a nest egg as big as your annual salary if you put 10% of your income into a Buy My Own Island Fund and invest in stocks and bonds?";
+		realans[7] = "7 years";
+		fakeans1[7] = "10 years";
+		fakeans2[7] = "15 years";
+		fakeans3[7] = "20 years";
+
+		questions[8] = "How long will it take for your nest egg to earn more than you earn, if you you put 10% of your income into a Buy My Own Island Fund and invest in stocks and bonds?";
+		realans[8] = "25 years";
+		fakeans1[8] = "50 years";
+		fakeans2[8] = "75 years";
+		fakeans3[8] = "100 years";
+
+		questions[9] = "What's the better investment strategy in a slow-growth, high-debt world?";
+		realans[9] = "Modern Portfolio Theory";
+		fakeans1[9] = "Buy & Hold";
+		fakeans2[9] = "Value Investing";
+		fakeans3[9] = "Divident Investing";
+
+		questions[10] = "Which countries hold the most gold?";
+		realans[10] = "US";
+		fakeans1[10] = "Germany";
+		fakeans2[10] = "China";
+		fakeans3[10] = "Italy";
+
+		questions[11] = "How long did gold remain over $800/ounce in 1980?";
+		realans[11] = "2 days";
+		fakeans1[11] = "2 months";
+		fakeans2[11] = "2 weeks";
+		fakeans3[11] = "2 years";
+
+		questions[12] = "What is not part of the Four Questions for Picking Winning Stocks?";
+		realans[12] = "How big is the company?";
+		fakeans1[12] = "What is the product?";
+		fakeans2[12] = "Who is the customer?";
+		fakeans3[12] = "Who's the CEO and can s/he motivate the employees to make the best product faster and cheaper than the competition?";
+
+
+		questions[13] = "What is not part of the 3-Ingredient Recipe for Cooking up Profits?";
+		realans[13] = "Pick a follower";
+		fakeans1[13] = "Start with what you know and love";
+		fakeans2[13] = "Pick the leader";
+		fakeans3[13] = "Buy low, sell high (easy to say, hard to do)";
+
+		questions[14] = "What is the top performing month for stocks over the past 5 years?";
+		realans[14] = "April";
+		fakeans1[14] = "January";
+		fakeans2[14] = "June";
+		fakeans3[14] = "July";
+
+		questions[15] = "What  is the worst month for stocks over the past five years?";
+		realans[15] = "June";
+		fakeans1[15] = "January";
+		fakeans2[15] = "March";
+		fakeans3[15] = "December";
+
+		questions[16] = "What was the top performing 2-month period for stocks over the past five years?";
+		realans[16] = "March-April";
+		fakeans1[16] = "January-February";
+		fakeans2[16] = "August-September";
+		fakeans3[16] = "November-December";
+
+		questions[17] = "Which year is expected to perform better, based upon historical returns of election years?";
+		realans[17] = "2015";
+		fakeans1[17] = "2012";
+		fakeans2[17] = "2014";
+		fakeans3[17] = "2013";
+
+		questions[18] = "How many companies are in the Dow Jones Industrial Average?";
+		realans[18] = "30";
+		fakeans1[18] = "10";
+		fakeans2[18] = "20";
+		fakeans3[18] = "40";
+
+		questions[18] = "How many Dow Jones Industrial Average companies were bailed out or went bankrupt in the Great Recession?";
+		realans[18] = "6";
+		fakeans1[18] = "5";
+		fakeans2[18] = "7";
+		fakeans3[18] = "8";
 
 
         //array of other arrays
