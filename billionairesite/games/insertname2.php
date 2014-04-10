@@ -1,22 +1,19 @@
-	
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Games</title>
-<link rel="stylesheet" type="text/css" href="../stylesheet.css" />
-
-         <?php
-		 
-		 	include '../includes/quizgamesql.php';
-		 	include "../includes/navbar.php";
-			
-		 ?>
+<title>Billionaire Bootcamp</title>
+<link rel="stylesheet" type="text/css" href="stylesheet.css" />
 
 </head>
 
-<body id = "game">
+<body id = "home">
 
+
+
+         <?php
+		 	include "includes/navbar.php";
+		 ?>
 
 <div id = "outercontainer">
 	
@@ -47,10 +44,10 @@
     </div>  
 </aside>
 
+
 <div id="main">
-	
-	
-	<?php
+
+    	<?php
 		
 	        	
 	$dbconnection = mysql_connect("localhost", "root", "root");  
@@ -85,56 +82,13 @@
 	
 	This is the insert page.
 	
-</div>	
+	
 	<a href = "billionairetrivia.php"><input type = "button" value = "Play Again!"></input>
 
-    <div style="clear:both"> </div>
-    <br />
-    
-    <div id = "highscores">
-		<?php
-		
-		
-		$i = 0;
-		$count = 1;
-		$colors = array('scorerow','scorerow green');
-		
-		echo "<strong><div class = 'scorerow white'><div class = 'count'>Rank</div><div class = 'nickname'> Name </div><div class = 'score'>Score</div><div class = 'timestamp'>Date</div></div></strong><br/><br/>";
-		
-		while ($row = mysql_fetch_array($results)){
-			echo "<div class = '" . $colors[$i++ % 2] . "'><div class = 'count'>". $count++ . ".</div><div class = 'nickname'> ". $row["user_name"] .  "</div><div class = 'score'>" . $row["score"] . "</div><div class = 'timestamp'>" . date('m/j/y ',strtotime($row["score_time"])) . "</div></div><br/>";
-			
-		}
-		
-		
-		
-		
-		?>
-		
-		
-	 	<?php
-
-	 	    
-			$highscorelim = mysql_result($results, 9);
-
-	 	?>
-	 	<script>
-	     var highscorelimit =  <? echo $highscorelim ?>
-
-	    console.log(highscorelimit);
-	 	</script>
-		
-    </div>
-    
-	
-	//</div>
-	
-
 </div>
 
 </div>
-
-    <div style="clear:both" > </div>
+    <div style="clear:both" /> </div>
 
 <div id="footer">
 
@@ -145,6 +99,10 @@
     
 </div>
 
-<script src = "quizup.js"></script>
+
+
+<div style="display: block; font-family: Verdana, Geneva, Arial; font-size: 10px">
+The University of Southern California does not screen or control the content on this website and thus does not guarantee the accuracy, integrity, or quality of such content.  All content on this website is provided by and is the sole responsibility of the person from which such content originated, and such content does not necessarily reflect the opinions of the University administration or the Board of Trustees
+</div>
 </body>
 </html>

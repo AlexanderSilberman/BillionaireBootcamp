@@ -66,8 +66,16 @@
     <div style ="clear:both;"> </div>
     
 	<div id = "quizbox">
-		<div id = "start">click here start</div	>
-		<div id = "timer"><span id="countdown" class="timer"></span></div>
+		
+		<br /> <br />
+			<div id = "startscreen">
+			<div id= "billionairetriviatitle"> BILLIONAIRE TRIVIA </div>
+			<br />
+			<div id = "billionairetriviainst"> Correctly answer as many questions as you can before the timer goes off!  </div>
+			<br /> <br />
+			<div id = "start">Click here start</div	>
+		</div>
+		<div id = "timer"><span id="countdown"></span></div>
 		<div id = "quizspace">
 			<div id = "question"></div>
 			<button id ="a1" class = "answer" onclick="answered(1)" ></button><div id = "check1" class ="result"></div>

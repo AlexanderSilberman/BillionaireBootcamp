@@ -1,12 +1,12 @@
-        var correctOption = '';
+var correctOption = '';
         var gameStatus = '';
 		
         var questions = []; var realans = []; var fakeans1 = []; var fakeans2 = [];var fakeans3 = [];
-        questions[0] = "this is a questions0"; 				realans[0] = "the answer0";       fakeans1[0] = "wrong0";   fakeans2[0] = "no0";    fakeans3[0] = "nope0";
-        questions[1] = "this is another question2";         realans[1] = "the answer for 2";  fakeans1[1] = "bad2";     fakeans2[1] = "naw2";   fakeans3[1] = "bad2";
-        questions[2] = "this is yet another question3";     realans[2] = "the answer for 3";  fakeans1[2] = "nope3";    fakeans2[2] = "no3";    fakeans3[2] = ":(3";
-        questions[3] = "and again yet another question";    realans[3] = "the answer for 4";  fakeans1[3] = "wrong4";   fakeans2[3] = "wrong4"; fakeans3[3] = "wrong4";
-        questions[4] = "and again yet another question5";   realans[4] = "the answer for 5";  fakeans1[4] = "wrong5";   fakeans2[4] = "wrong5"; fakeans3[4] = "wrong5";
+       questions[0] = "What is the one question you should ask your Certified Financial Advisor before hiring him/her"; 				realans[0] = "How much of my portfolio should be in stocks";       fakeans1[0] = "Which Level of the CFA Exam have you passed?";   fakeans2[0] = "Can you pitch me a stock?";    fakeans3[0] = "What is your fee?v";
+        questions[1] = "How much of your nest egg should you keep safe?";         realans[1] = "A percentage equal to your age ";  fakeans1[1] = "A percentage twice your age";     fakeans2[1] = "A percentage half your age";   fakeans3[1] = "100%";
+        questions[2] = "What's safe?";     realans[2] = "Bonds";  fakeans1[2] = "Corporate debt";    fakeans2[2] = "CMBS loans";    fakeans3[2] = "Municipals";
+        questions[3] = "What is the average return of stocks over the last 10 and 30 years?";    realans[3] = "7.41% over the last 10 and 11.09% over the last 30";  fakeans1[3] = "50.00% over the last 10 and 90.00% over the last 30";   fakeans2[3] = "32.65% over the last 10 and 41.20 % over the last 30"; fakeans3[3] = "9.63% over the last 10 and 23.56% over the last 30";
+        questions[4] = "What is the average return of gold over the last 10 and 30 years?";   realans[4] = "11.09% over the last 10 and 3.84% over the last 30";  fakeans1[4] = "3.32% over the last 10 and 19.63% over the last 30";   fakeans2[4] = "9.63% over the last 10 and 6.69% over the last 30"; fakeans3[4] = "7.41% over the last 10 and 9.97% over the last 30";
 
 
         //array of other arrays
@@ -145,31 +145,48 @@
 
                         //checks position of correct answer to display correct response
                         if(randarra[0]== 0){
-                            $("#check1").html("!");
+                            $("#check1").html("&#10004;");
+			    $("#check1").addClass("checkmark");
+			    $("#check1").removeClass("result");
                             correctOption = 1;
                         } else {
                             $("#check1").html("X");
+			    $("#check1").addClass("result");
+			    $("#check1").removeClass("checkmark");
+			    
                         };
 
                         if(randarra[1]== 0){
-                            $("#check2").html("!");
+                            $("#check2").html("&#10004;");
+			    $("#check2").addClass("checkmark");
+			    $("#check2").removeClass("result");
                             correctOption = 2;
                         } else {
                             $("#check2").html("X");
+			    $("#check2").addClass("result");
+			    $("#check2").removeClass("checkmark");
                         };
 
                         if(randarra[2]== 0){
-                            $("#check3").html("!");
+                            $("#check3").html("&#10004;");
+			    $("#check3").addClass("checkmark");
+			    $("#check3").removeClass("result");
                             correctOption = 3;
                         } else {
                             $("#check3").html("X");
+			    $("#check3").addClass("result");
+			    $("#check3").removeClass("checkmark");
                         };
 
                         if(randarra[3]== 0){
-                            $("#check4").html("!");
+                            $("#check4").html("&#10004;");
+			    $("#check4").addClass("checkmark");
+			    $("#check4").removeClass("result");
                             correctOption = 4;
                         } else {
                             $("#check4").html("X");
+			    $("#check4").addClass("result");
+			    $("#check4").removeClass("checkmark");
                         };
 
                         $("#quizspace").fadeIn(100);
@@ -201,8 +218,11 @@
             $("#start").on("click",newquestion);
 
             $("#start").on("click",function(){
-                $("#start").fadeOut(500);
-                $("#timer").fadeIn(100);
+                $("#startscreen").fadeOut(100, function(){
+		  $("#timer").fadeIn(500);
+		  
+		  });
+                
             });
 			
             $("#start").on("click",function(){
