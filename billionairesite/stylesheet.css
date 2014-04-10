@@ -315,7 +315,9 @@ nav ul ul li a:hover {
 	width:700px;
 	//border-style:solid;
 	}
-	
+
+
+/*styles for leaderboard on trivia page	*/
 .scorerow {
 	margin-left:5px;
 	width:695px;
@@ -371,8 +373,73 @@ nav ul ul li a:hover {
 	border-top-right-radius: 5px;
 	border-bottom-right-radius: 5px;
 }
+
+
+/*styles for leaderboard on main games page*/
+
+
+.scorerow1 {
+	margin-left:5px;
+	width:600px;
+	height:auto;
+	background-color:white;
+	margin-top:5px;
+	font-size:.9em;
 	
-#thriveleaderboard{
+	
+
+}
+
+.green1 {
+	
+	background-color: rgb(80,187,65);;
+	
+
+}
+
+
+
+.count1 {
+	width:50px;
+	float:left;
+	//border-style:solid;
+	background-color:inherit;
+	text-align:center;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}		
+
+.nickname1 {
+	width:95px;
+	float:left;
+	background-color:inherit;
+}
+
+.score1 {
+	width:65px;
+	float:left;
+	background-color:inherit;
+}
+
+.timestamp1 {
+	width:70px;
+	float:left;
+	background-color:inherit;
+	-webkit-border-top-right-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	-moz-border-radius-topright: 5px;
+	-moz-border-radius-bottomright: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+/*end high scores*/
+	
+#thriveleaderboard {
 	width: 290px;
 	height:225px;
 	margin:8px;
@@ -398,7 +465,7 @@ nav ul ul li a:hover {
 	text-align:center;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size:14px;
-	border-style:solid;
+	//border-style:solid;
 	float:right;
 	margin-top:-226px;
 	background-color: rgb(209,229,172); 

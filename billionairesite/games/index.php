@@ -3,11 +3,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Billionaire Bootcamp</title>
-<link rel="stylesheet" type="text/css" href="stylesheet.css" />
+<title>Games</title>
+<link rel="stylesheet" type="text/css" href="../stylesheet.css" />
 
          <?php
-		 	include "includes/navbar.php";
+		 
+		 	include '../includes/quizgamesql.php';
+		 	include "../includes/navbar.php";
+			
 		 ?>
 
 </head>
@@ -53,7 +56,7 @@
     <div style ="clear:both;"/> </div>
     
 	<div id="thrivebudget"> 
-    <a href="thrivebudget.html"><img src="thrivebudget.PNG" class="gameplaceholderimage" /></a>
+    <a href="BillionaireBootcamp/billionairesite/games/thrivebudget.php"><img src="thrivebudget.PNG" class="gameplaceholderimage" /></a>
     </div>
 	
     <div style="clear:both" /> </div>
@@ -145,11 +148,32 @@
     <div style="clear:both" /> </div>
     
     <div id="thrivebudget"> 
-   <a href="billionairetrivia.html">	<img src="billionairetrivia.jpeg" class="gameplaceholderimage" /></a>
+   <a href="/BillionaireBootcamp/billionairesite/games/billionairetrivia.php">	<img src="billionairetrivia.jpeg" class="gameplaceholderimage" /></a>
 
     </div>
     
-    <table id="trivialeaderboard"> 
+	<div id = "trivialeaderboard">
+	<?php
+	
+	
+	$i = 0;
+	$count = 1;
+	$colors = array('scorerow1','scorerow1 green');
+	
+	echo "<strong><div class = 'scorerow1 white'><div class = 'count1'>Rank</div><div class = 'nickname1'> Name </div><div class = 'score1'>Score</div><div class = 'timestamp1'>Date</div></div></strong><br/>";
+	
+	while ($row = mysql_fetch_array($results)){
+		echo "<div class = '" . $colors[$i++ % 2] . "'><div class = 'count1'>". $count++ . ".</div><div class = 'nickname1'> ". $row["user_name"] .  "</div><div class = 'score1'>" . $row["score"] . "</div><div class = 'timestamp1'>" . date('m/j/y ',strtotime($row["score_time"])) . "</div></div><br/>";
+		
+	}
+	
+	
+	
+	
+	?>
+	
+	</div>
+   <!-- <table id="trivialeaderboard"> 
 	<tr>
               <th>Rank</th>
               <th>Last Name</th> 
@@ -226,7 +250,7 @@
             <td>75 pts</td>
 			<td>3/10/14</td>
         </tr>
-    </table>
+    </table> ---->
 
 </div>
 
@@ -244,8 +268,6 @@
 
 
 
-<div style="display: block; font-family: Verdana, Geneva, Arial; font-size: 10px">
-The University of Southern California does not screen or control the content on this website and thus does not guarantee the accuracy, integrity, or quality of such content.  All content on this website is provided by and is the sole responsibility of the person from which such content originated, and such content does not necessarily reflect the opinions of the University administration or the Board of Trustees
-</div>
+
 </body>
 </html>

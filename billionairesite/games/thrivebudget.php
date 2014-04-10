@@ -4,10 +4,10 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Billionaire Bootcamp</title>
-<link rel="stylesheet" type="text/css" href="stylesheet.css" />
+<link rel="stylesheet" type="text/css" href="../stylesheet.css" />
 
          <?php
-		 	include "includes/navbar.php";
+		 	include "../includes/navbar.php";
 		 ?>
 
 </head>
@@ -46,27 +46,36 @@
 
 <div id="main">
 
-    <div id="aboutwebsite">
-    <span style="font-size:30px;">Top 11 Investing Mistakes</span>
-    <p>Mistake # 1: Following Analyst Recommendations</p>
-    <p>Mistake # 2: Bankruptcy Buying</p>
-    <p>Mistake # 3: Scooping Up “Pet Rocks”</p>
-    <p>Mistake # 4: Chasing Hot Tips</p>
-    <p>Mistake # 5: Taking “Sure Shots”</p>
-    <p>Mistake # 6: Panicking (or Swooning) over Front Page
-Headlines
-</p>
-    <p>Mistake # 7: Falling for Company Hype</p>
-    <p>Mistake # 8: Having Blind Faith</p>
-    <p>Mistake # 9: Betting on the “Hail Mary” Investment</p>
-    <p>Mistake # 10: Keeping Too Much Stock in Your Employer’s
-Company</p>
-    <p>Mistake # 11: Employing Friends and Lovers</p>
- 
+<div id="main">
+
+    <div id="gamepagetitle"> Thrive Budget Game</div>
     
+    <div style ="clear:both;"/> </div>
+    
+	<div class="gamepagegamecontainer"> 
+    <img src="thrivebudget.PNG" style="width:690px; height:400px;" />
     </div>
     
+    <div class="gameinstructions">
+  <br /> <strong>Instructions:</strong> The basic breakdown of a “Double Your Fun” budget is 50 percent to Thrive and 50 percent to Survive.  The object of the game is to find the best way to allocate your earnings across the various spending buckets.  The better you allocate, the higher your score! 
+<br /><br />
+1. 10 percent to investing
+<br /><br />
+2. 10 percent to charity 
+<br /><br />
+3. 10 percent to education
+<br /><br /> 
+4. 20 percent spent on fun. (Half on immediate fun, like movies, fashion and dinners out, the other half on something you’ll have to save up for, like vacations, Jacuzzis, boats, etc.) 
+<br /><br />
+5. 50 percent for all your basic needs (including taxes, housing, food, clothing, etc.)
+
+	
+    <div style="clear:both" /> </div>
     <br />
+    
+
+</div>
+
 </div>
 
 </div>
@@ -85,8 +94,6 @@ Company</p>
 
 
 
-<div style="display: block; font-family: Verdana, Geneva, Arial; font-size: 10px">
-The University of Southern California does not screen or control the content on this website and thus does not guarantee the accuracy, integrity, or quality of such content.  All content on this website is provided by and is the sole responsibility of the person from which such content originated, and such content does not necessarily reflect the opinions of the University administration or the Board of Trustees
-</div>
+
 </body>
 </html>

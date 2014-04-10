@@ -5,7 +5,7 @@
 
 
 	<div id="top">
-	<img src="finallogo.png" style="float:left;" /> 
+	<img src="/BillionaireBootcamp/billionairesite/images/finallogo.png" style="float:left;" /> 
 	
     <br /><br /><br />
     
@@ -26,24 +26,24 @@
 	<div id="menubox">
     	<div id="menu">
     		<ul>
-        		<li>  <a href="homepage.html" class="narrow selected">  Home  </a>  </li>
-            	<li>  <a href="games.html"> Games </a>  
+        		<li>  <a href="/BillionaireBootcamp/billionairesite" class="narrow selected">  Home  </a>  </li>
+            	<li>  <a href="/BillionaireBootcamp/billionairesite/games/index.php"> Games </a>  
             		<ul> 
-                		<li> <a href="thrivebudget.html"> Thrive Budget </a> </li>
-                		<li> <a href="billionairetrivia.html"> Billionaire Trivia </a> </li>
+                		<li> <a href="/BillionaireBootcamp/billionairesite/games/thrivebudget.php"> Thrive Budget </a> </li>
+                		<li> <a href="/BillionaireBootcamp/billionairesite/games/billionairetrivia.php"> Billionaire Trivia </a> </li>
                 	</ul>
             	</li>
             
-           		<li>  <a href="student.html">  Student Resources </a>  
+           		<li>  <a href="/BillionaireBootcamp/billionairesite/students/index.php">  Student Resources </a>  
  					 <ul>
-                		<li> <a href="investing.html">  Investing Mistakes  </a> </li>
-						<li> <a href="cookupprofits.html">  Cooking up Profits  </a> </li>
+                		<li> <a href="/BillionaireBootcamp/billionairesite/students/investing.php">  Investing Mistakes  </a> </li>
+						<li> <a href="/BillionaireBootcamp/billionairesite/students/cookupprofits.php">  Cooking up Profits  </a> </li>
                 	 </ul>	
             	</li> 
             
-           	 	<li> <a href="teacher.html">  Teacher Resources </a> </li>
-  				<li> <a href="about.html" class="narrow">  About </a> </li>
-           	 	<li> <a href="contact.html" class="narrow">  Contact </a> </li>
+           	 	<li> <a href="/BillionaireBootcamp/billionairesite/teacher/index.php">  Teacher Resources </a> </li>
+  				<li> <a href="/BillionaireBootcamp/billionairesite/about/index.php" class="narrow">  About </a> </li>
+           	 	<li> <a href="/BillionaireBootcamp/billionairesite/contact/index.php" class="narrow">  Contact </a> </li>
                 
        		 </ul>
     <br style="clear:both" />

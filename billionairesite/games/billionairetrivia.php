@@ -3,19 +3,19 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Billionaire Bootcamp</title>
+<title>Games - Billionaire Quiz</title>
 
 	<?php
 		
-	include 'includes/quizgamesql.php';
-	include 'includes/navbar.php';
+	include '../includes/quizgamesql.php';
+	include '../includes/navbar.php';
 		
 	?>
-<link rel="stylesheet" type="text/css" href="stylesheet.css" />
-<link rel="stylesheet" type="text/css" href="../quiz-game-prototype/quizup.css" />
+<link rel="stylesheet" type="text/css" href="../stylesheet.css" />
+<link rel="stylesheet" type="text/css" href="quizup.css" />
 
     <!-- Link your jQuery Library first -->
-    <script src="../quiz-game-prototype/jquery-2.0.3.min.js"></script>
+    <script src="jquery-2.0.3.min.js"></script>
 	
 	
 	
@@ -120,7 +120,7 @@
 		echo "<strong><div class = 'scorerow white'><div class = 'count'>Rank</div><div class = 'nickname'> Name </div><div class = 'score'>Score</div><div class = 'timestamp'>Date</div></div></strong><br/><br/>";
 		
 		while ($row = mysql_fetch_array($results)){
-			echo "<div class = '" . $colors[$i++ % 2] . "'><div class = 'count'>". $count++ . ".</div><div class = 'nickname'> ". $row["user_name"] .  "</div><div class = 'score'>" . $row["score"] . "</div><div class = 'timestamp'>" . $row["score_time"] . "</div></div><br/>";
+			echo "<div class = '" . $colors[$i++ % 2] . "'><div class = 'count'>". $count++ . ".</div><div class = 'nickname'> ". $row["user_name"] .  "</div><div class = 'score'>" . $row["score"] . "</div><div class = 'timestamp'>" . date('m/j/y ',strtotime($row["score_time"])) . "</div></div><br/>";
 			
 		}
 		
@@ -164,11 +164,9 @@
 
 
 
-<div style="display: block; font-family: Verdana, Geneva, Arial; font-size: 10px">
-The University of Southern California does not screen or control the content on this website and thus does not guarantee the accuracy, integrity, or quality of such content.  All content on this website is provided by and is the sole responsibility of the person from which such content originated, and such content does not necessarily reflect the opinions of the University administration or the Board of Trustees
-</div>
 
 
-<script src = "../quiz-game-prototype/quizup.js"></script>
+
+<script src = "quizup.js"></script>
 </body>
 </html>
