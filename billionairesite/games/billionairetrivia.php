@@ -89,6 +89,10 @@
 			<div class = "totalscore">
 				Your total score is 
 			</div>
+			<div>
+				<a href = "billionairetrivia.php"><input type = "button" value = "Play Again!"></input></a>
+			</div>
+			
 		</div>
 		
 		<div id = "gameoverwin">Game Over!
