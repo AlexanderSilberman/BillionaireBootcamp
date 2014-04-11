@@ -69,10 +69,7 @@
 	
 	$thesqltwo = "INSERT INTO quiz_game_scores (user_name, score) 
 	VALUES ('$name', $endscore)";
-		
-	echo "The SQL was" . $thesqltwo;
-  
-	
+		  
 	
 	$resultstwo = mysql_query($thesqltwo);
             	
@@ -83,9 +80,8 @@
 	        	
 	?>
 	
-	This is the insert page.
 	
-	<a href = "billionairetrivia.php"><input type = "button" value = "Play Again!"></input>
+	<a href = "billionairetrivia.php"><input type = "button" value = "Play Again!" class="playagainbutton"></input>
 </div>
 
 
