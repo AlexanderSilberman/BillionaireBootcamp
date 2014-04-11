@@ -400,7 +400,25 @@ var update = function (modifier) {
 		  
 	  } 
 	  
-	  //Go to sleep
+	  //Use Computer
+	  if(32 in keysDown && x==5 && y==2 && hero.y==128){
+		  txtbox=true;
+		  delete keysDown[32];
+		  mode="computer";
+		  if(!hero.activity){
+			cur=true;
+			textDisplay.say("What website?");
+			textDisplay.say("Online classes (-$1500)");
+			textDisplay.say("Add to bank funds (-200)");
+			textDisplay.say("Play video games ($15/M");
+			textDisplay.say("Resarch Stocks (-1000)");
+		  }
+		  else{
+			  textDisplay.say("You should go to sleep!");
+		  }
+		  
+	  }
+	  
 	  if(32 in keysDown && ((hero.x==448 && x==7 && y==3) 
 	   || (hero.x==448 && x==7 && y==2) )){
 		   
@@ -437,7 +455,7 @@ var update = function (modifier) {
 		}
 	}
 	//Use the phone
-	if(mode=="cellphone"){
+	if(mode=="cellphone" || mode=="computer" || mode=="fridge" || mode=="bookshelf"){
 		if(27 in keysDown){
 			textDisplay.clear();
 			cursor.rst();
@@ -460,31 +478,60 @@ var update = function (modifier) {
 		//Click Space
 		if(32 in keysDown){
 			  if(!hero.activity){
-			  hero.activity=true;
-			  cur=false;
-			  textDisplay.clear();
-			  result=true;
-			  if(cursor.pos==0){
-				  textDisplay.say("You pledge 30 dollars a week to goodwill. They thank you profusely for your generous donation");
-				  stats.money-=30;
-				  stats.charity+=30;
-			  }
-			  else if(cursor.pos==1){
-					textDisplay.say("You go to the movies and then shopping with friends. Spend $100.");
-					stats.tfunS+=100;
-					stats.money-=100;
-					hero.stress-=10;  
-			  }
-			  else if(cursor.pos==2){
-				  textDisplay.say("You talk to your stock broker and invest $500 into a bundle of stocks.");
-				  stats.tinvest+=500;
-				  stats.money-=500; 
-			  }
-			  else if(cursor.pos==2){
-				  textDisplay.say("You upgrade your house's appliances for $5000. Everything works nice now.");
-				  stats.tfunL+=5000;
-				  stats.money-=5000;
-			  }
+				hero.activity=true;
+				cur=false;
+				textDisplay.clear();
+				result=true;
+				if(cursor.pos==0){
+					if(mode=="cellphone"){
+					  textDisplay.say("You pledge 30 dollars a week to goodwill. They thank you profusely for your generous donation");
+					  stats.charity+=30;
+					}
+					if(mode=="computer"){
+						textDisplay.say("You sign up for some web programming classes. $1500 out the bank.");
+						stats.teducation+=1500;
+						stats.money-=1500;
+					}
+				}
+			  
+				else if(cursor.pos==1){
+					if(mode=="cellphone"){
+					  textDisplay.say("You go to the movies and then shopping with friends. Spend $100.");
+					  stats.tfunS+=100;
+					  stats.money-=100;
+					  hero.stress-=10;  
+					}
+					if(mode=="computer"){
+						textDisplay.say("You put $200 into your saving's account");
+						stats.money-=200;
+						stats.tinvest+=200;
+					}
+				}
+				else if(cursor.pos==2){
+					if(mode=="cellphone"){
+					  textDisplay.say("You talk to your stock broker and invest $500 into a bundle of stocks.");
+					  stats.tinvest+=500;
+					  stats.money-=500; 
+					}
+					if(mode=="computer"){
+						textDisplay.say("You sign up for a $15 video game subscription. You feel less frustrated.");
+						stats.funS+=15;
+						hero.stress-=5;
+					}
+				}
+				else if(cursor.pos==3){
+					if(mode=="cellphone"){
+					  textDisplay.say("You upgrade your house's appliances for $5000. Everything works nice now.");
+					  stats.tfunL+=5000;
+					  stats.money-=5000;
+					}
+					if(mode=="computer"){
+						textDisplay.say("You update your stocks. Hopefully it will pay off!");
+						stats.money-=1000;
+						stats.tinvest+=1000;
+						
+					}
+				}
 			}
 		}
 	}
