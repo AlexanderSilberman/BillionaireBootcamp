@@ -3,6 +3,7 @@ var mode="moving";
 var txtbox=false;
 var cur=false;
 var then=0;
+var week=0;
 
 var counter=0;
 
@@ -24,7 +25,7 @@ var stats={
 	funS:0,
 	invest:0,
 	education:0,
-	sustain:400,
+	sustain:300,
 	tcharity:0,
 	tfunL:0,
 	tfunS:0,
@@ -211,7 +212,7 @@ var render =function () {
 		
 		//Stats section
 		game.ctx.fillStyle="white";
-		game.ctx.fillRect(128,520,500,500);
+		game.ctx.fillRect(0,500,500,500);
 		game.ctx.drawImage(imageRepository.hero, hero.x, hero.y, 64, 64);
 		game.ctx.fillStyle="rgb(0,0,0)";
 		game.ctx.font = "24px Helvetica";
@@ -219,6 +220,7 @@ var render =function () {
 		game.ctx.textBaseline = "top";
 		game.ctx.fillText("Cash=" + stats.money, 128,520,5000);
 		game.ctx.fillText("Stress=" + hero.stress, 128,550,5000);
+		game.ctx.fillText("Week "+week, 20, 520, 5000);
 		if(txtbox==true){
 		  textDisplay.update();
 		  game.ctx.drawImage(imageRepository.textbox, 128,128, 384, 240);
@@ -371,6 +373,7 @@ var update = function (modifier) {
 				textDisplay.say("LIVING IS EXPENSIVE");
 				textDisplay.say("Life costs you $"+total);
 				textDisplay.say("Profit of $"+(hero.wages*hero.hours-total));
+				events();
 			}
 			else{
 				textDisplay.say("You already went to work!");
@@ -550,10 +553,27 @@ var update = function (modifier) {
 			stats.tfunS=stats.funS
 			stats.tinvest=stats.invest;
 			stats.tsustain=stats.sustain;
+			week++;
+			
+			if(week>=10){
+				txtbox=true;
+				textDisplay.say("Game Over.");
+				textDisplay.say("You made $"+(stats.money-5000));
+				textDisplay.say("You invested $"+stats.tcharity+stats.tinvest+stats.tfunL+stats.tfunS+stats.tinvest+" into your life.\nPressA to restart");
+				mode="gameover";
+			}
 		}
 	}
 };
 
+var events = function(){
+	var ran=Math.floor((Math.random()*10)+1);
+	if((stats.tcharity/stats.tsustain)>=0.1){
+		if(ran>=9){
+				textDisplay.say("Charity is tax deductible! You gain $"+stats.tcharity*0.5+" back.");
+		}
+	}
+}
 
 
 var check = function(direction, loc){
