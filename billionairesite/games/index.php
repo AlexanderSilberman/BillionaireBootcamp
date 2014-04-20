@@ -56,7 +56,7 @@
     <div style ="clear:both;"/> </div>
     
 	<div id="thrivebudget"> 
-    <a href="/BillionaireBootcamp/billionairesite/games/thrivebudget.php"><img src="../images/thrivebudgetgame.PNG" class="gameplaceholderimage" /></a>
+    <a href="/nataliepacenew/billionairesite/games/thrivebudget.php"><img src="../images/thrivebudgetgame.png" class="gameplaceholderimage" /></a>
     </div>
 	
     <div style="clear:both" /> </div>
@@ -148,7 +148,7 @@
     <div style="clear:both" /> </div>
     
     <div id="thrivebudget"> 
-   <a href="/BillionaireBootcamp/billionairesite/games/billionairetrivia.php">	<img src="../images/triviagame.PNG" class="gameplaceholderimage" /></a>
+   <a href="/nataliepacenew/billionairesite/games/billionairetrivia.php">	<img src="../images/triviagame.png" class="gameplaceholderimage" /></a>
 
     </div>
     

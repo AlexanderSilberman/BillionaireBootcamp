@@ -56,13 +56,13 @@
     <div style ="clear:both;"/> </div>
     
 	<div id="thrivebudget"> 
-    <a href="/BillionaireBootcamp/billionairesite/games/thrivebudget.php"><img src="images/thrivebudgetgame.PNG" class="gameplaceholderimage" /></a>
+    <a href="/nataliepacenew/billionairesite/games/thrivebudget.php"><img src="images/thrivebudgetgame.png" class="gameplaceholderimage" /></a>
     </div>
 	
     <div style="clear:both" /> </div>
 
     <div id="billionairetrivia"> 
-    <a href="/BillionaireBootcamp/billionairesite/games/billionairetrivia.php"><img src="images/triviagame.png" class="gameplaceholderimage" /></a>
+    <a href="/nataliepacenew/billionairesite/games/billionairetrivia.php"><img src="images/triviagame.png" class="gameplaceholderimage" /></a>
     </div>
 	
     <br />
@@ -70,12 +70,12 @@
     <div id="popularcontenttitle"> Popular Content</div>
     <div style="clear:both" /> </div>
     <div id="popularcontent"> 
-    <div class="popularcontenttitle"><a href="/BillionaireBootcamp/billionairesite/students/investing.php">Top 12 Investing Mistakes</a></div>
+    <div class="popularcontenttitle"><a href="/nataliepacenew/billionairesite/students/investing.php">Top 12 Investing Mistakes</a></div>
     <div class="popularcontentdescription">Find out what the most common mistakes people make when investing in stocks are from financial guru Natalie Pace.</div>
     </div>
     
     <div id="popularcontentright"> 
-    <div class="popularcontenttitle"><a href="/BillionaireBootcamp/billionairesite/students/cookupprofits.php">How to Cook Up Profits</a></div>
+    <div class="popularcontenttitle"><a href="/nataliepacenew/billionairesite/students/cookupprofits.php">How to Cook Up Profits</a></div>
     <div class="popularcontentdescription">Learn about the best ways to guarantee your bottom line when investing in stocks.</div>
     </div>
 
@@ -94,9 +94,5 @@
 </div>
 
 
-
-<div style="display: block; font-family: Verdana, Geneva, Arial; font-size: 10px">
-The University of Southern California does not screen or control the content on this website and thus does not guarantee the accuracy, integrity, or quality of such content.  All content on this website is provided by and is the sole responsibility of the person from which such content originated, and such content does not necessarily reflect the opinions of the University administration or the Board of Trustees
-</div>
 </body>
 </html>

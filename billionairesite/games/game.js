@@ -177,9 +177,9 @@ var imageRepository = new function() {
 	}
 	//Set the images sources
 	this.tilesheet.src = "images/House.gif";
-	this.hero.src = "images/hero.png";
+	this.hero.src = "images/Hero.png";
 	this.textbox.src = "images/Textbox.png";
-	this.cellphone.src = "images/phone.png";
+	this.cellphone.src = "images/Phone.png";
 	this.cursor.src = "images/Cursor.png";
 }
 
@@ -568,8 +568,9 @@ var update = function (modifier) {
 
 var events = function(){
 	var ran=Math.floor((Math.random()*10)+1);
+	var rand=Math.floor((Math.random()*5)+1);
 	if((stats.tcharity/stats.tsustain)>=0.1){
-		if(ran>=9){
+		if(ran>=7){
 				textDisplay.say("Charity is tax deductible! You gain $"+stats.tcharity*0.5+" back.");
 		}
 	}
