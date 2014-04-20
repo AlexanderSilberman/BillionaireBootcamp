@@ -85,7 +85,7 @@
 </div>
 
 
-    <div style="clear:both"> </div>
+
     <br />
     
     <div id = "highscores">
@@ -133,7 +133,7 @@
 
     <div id="bottom">
     	<a href="http://www.nataliepace.com" id="footerlefttext">NataliePace.com</a>
-        <span id="footerrightttext">© Billionaire Bootcamp</span>
+        <span id="footerrightttext">ï¿½ Billionaire Bootcamp</span>
     </div>
     
 </div>

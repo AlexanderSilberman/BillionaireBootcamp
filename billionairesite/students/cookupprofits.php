@@ -165,13 +165,15 @@ Cloud 9 before we’re ninety, let’s sharpen your skills and start cooking.
 
 <br />
 </div>
+</div>
 
-<div style="clear:both" /> </div>
+    <div style="clear:both" /> </div>
+
 <div id="footer">
 
     <div id="bottom">
     	<a href="http://www.nataliepace.com" id="footerlefttext">NataliePace.com</a>
-        <span id="footerrightttext">© Billionaire Bootcamp</span>
+        <span id="footerrightttext"> &copy; Billionaire Bootcamp</span>
     </div>
     
 </div>
