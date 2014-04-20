@@ -117,7 +117,7 @@
 	</div>
     
     <div class="gameinstructions">
-  	<br /> <strong>Instructions:</strong> Answer the maximum amount of finance questions in the shortest amount of time to get the highest score!
+  	<br /> <strong>Instructions:</strong> Once the game starts a question will appear with four choices. Click on the option you think is right before the 10 second timer runs out. Answer the maximum amount of finance questions in the shortest amount of time to get the highest score!
 
 	
     <div style="clear:both"> </div>
