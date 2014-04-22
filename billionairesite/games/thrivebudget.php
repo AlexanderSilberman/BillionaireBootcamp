@@ -57,8 +57,9 @@
     </div>
     
     <div class="gameinstructions">
-  <br /> <strong>Instructions:</strong> The basic breakdown of a “Double Your Fun” budget is 50 percent to Thrive and 50 percent to Survive.  The object of the game is to find the best way to allocate your earnings across the various spending buckets.  The better you allocate, the higher your score! 
+  <br /> <strong>Financial Instructions:</strong> The basic breakdown of a “Double Your Fun” budget is 50 percent to Thrive and 50 percent to Survive.  The object of the game is to find the best way to allocate your earnings across the various spending buckets.  The better you allocate, the higher your score! 
 <br /><br />
+<span style="text-align:left;">
 1. 10 percent to investing
 <br /><br />
 2. 10 percent to charity 
@@ -68,10 +69,10 @@
 4. 20 percent spent on fun. (Half on immediate fun, like movies, fashion and dinners out, the other half on something you’ll have to save up for, like vacations, Jacuzzis, boats, etc.) 
 <br /><br />
 5. 50 percent for all your basic needs (including taxes, housing, food, clothing, etc.)
-<br /><br />
-Use the arrow keys to move.
-Space to interact.
-Esc to exit out of menus.
+<br /><br /></span>
+<strong>Game Instructions: </strong>Move Player - Arrow Keys.
+<br />Interact - Spacebar.
+<br />Exit Menus - ESC.
 <strong>Manage your cash, stress, and health.</strong>
 
 	
