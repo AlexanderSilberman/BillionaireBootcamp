@@ -2,11 +2,11 @@ var correctOption = '';
         var gameStatus = '';
 		
         var questions = []; var realans = []; var fakeans1 = []; var fakeans2 = [];var fakeans3 = [];
-		questions[0] = "What is the one question you should ask your Certified Financial Advisor before hiring him/her"; 
-		realans[0] = "How much of my portfolio should be in stocks";
-		fakeans1[0] = "Which Level of the CFA Exam have you passed?";   
+		questions[0] = "What is the one question you should ask your Certified Financial Advisor before hiring him/her?"; 
+		realans[0] = "How much of my portfolio should be in stocks?";
+		fakeans1[0] = "Which level of the CFA Exam have you passed?";   
 		fakeans2[0] = "Can you pitch me a stock?";    
-		fakeans3[0] = "What is your fee?v";
+		fakeans3[0] = "What is your fee?";
         
 		questions[1] = "How much of your nest egg should you keep safe?";
 		realans[1] = "A percentage equal to your age ";
@@ -23,7 +23,7 @@ var correctOption = '';
 		questions[3] = "What is the average return of stocks over the last 10 and 30 years?";
 		realans[3] = "7.41% over the last 10 and 11.09% over the last 30";
 		fakeans1[3] = "50.00% over the last 10 and 90.00% over the last 30";
-		fakeans2[3] = "32.65% over the last 10 and 41.20 % over the last 30";
+		fakeans2[3] = "32.65% over the last 10 and 41.20% over the last 30";
 		fakeans3[3] = "9.63% over the last 10 and 23.56% over the last 30";
 
 		questions[4] = "What is the average return of gold over the last 10 and 30 years?";
@@ -36,21 +36,21 @@ var correctOption = '';
 		realans[5] = "5.74%";
 		fakeans1[5] = "9.97%";
 		fakeans2[5] = "6.69%";
-		fakeans3[5] = "2.10";
+		fakeans3[5] = "2.10%";
 
 		questions[6] = "What is the top performing investment, so far, in 2013?";
 		realans[6] = "NASDAQ";
-		fakeans1[6] = "Real este";
+		fakeans1[6] = "Real estate";
 		fakeans2[6] = "Gold";
 		fakeans3[6] = "Dow Jones";
 
-		questions[7] = "How long will it take for you to have a nest egg as big as your annual salary if you put 10% of your income into a Buy My Own Island Fund and invest in stocks and bonds?";
-		realans[7] = "7 years";
-		fakeans1[7] = "10 years";
-		fakeans2[7] = "15 years";
-		fakeans3[7] = "20 years";
+		questions[7] = "What percentage of your monthly income should you spend on housing?";
+		realans[7] = "33%";
+		fakeans1[7] = "50%";
+		fakeans2[7] = "20%";
+		fakeans3[7] = "75%";
 
-		questions[8] = "How long will it take for your nest egg to earn more than you earn, if you you put 10% of your income into a Buy My Own Island Fund and invest in stocks and bonds?";
+		questions[8] = "How long will it take for your nest egg to earn more than you if you put away 10% of your income annually?";
 		realans[8] = "25 years";
 		fakeans1[8] = "50 years";
 		fakeans2[8] = "75 years";
@@ -60,7 +60,7 @@ var correctOption = '';
 		realans[9] = "Modern Portfolio Theory";
 		fakeans1[9] = "Buy & Hold";
 		fakeans2[9] = "Value Investing";
-		fakeans3[9] = "Divident Investing";
+		fakeans3[9] = "Dividend Investing";
 
 		questions[10] = "Which countries hold the most gold?";
 		realans[10] = "US";
