@@ -75,6 +75,12 @@ git config --global core.editor "emacs"
 
 Then when it opens up you can just write it and then do Control X and then Control S to save. Then Control X and then Control C to close it. 
 
+##IF YOU ARE USING MAMP##
+
+Don't cd to desktop. cd /applications
+
+This will send you to the applications folder for the entire computer, not just the user. That's where MAMP will be. And then cd htdocs ect.
+
 Made my Alexander Silberman
 Ganesh Sundar
 Drew Terry
