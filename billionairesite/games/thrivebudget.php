@@ -73,7 +73,7 @@
 <strong>Game Instructions: </strong>Move Player - Arrow Keys.
 <br />Interact - Spacebar.
 <br />Exit Menus - ESC.
-<strong>Manage your cash, stress, and health.</strong>
+<strong><br />Manage your cash, stress, and health.</strong>
 
 	
     <div style="clear:both" /> </div>
