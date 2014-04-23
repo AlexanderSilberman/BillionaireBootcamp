@@ -8,7 +8,7 @@
 
          <?php
 		 
-		 	include '../includes/quizgamesql.php';
+		 	
 		 	include "../includes/navbar.php";
 			
 		 ?>
@@ -62,8 +62,7 @@
             	
 	mysql_select_db("npnewweb", $dbconnection); 
      
-	$name = $_REQUEST["playername"];
-	        	
+	$name = $_REQUEST["playername"];	
 	
 	$endscore = $_REQUEST["finalscore"];
 	
@@ -89,6 +88,10 @@
     <br />
     
     <div id = "highscores">
+		<?php
+			include '../includes/quizgamesql.php';
+	
+		?>
 		<?php
 		
 		

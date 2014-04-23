@@ -352,7 +352,7 @@ var correctOption = '';
 			        var remainingSeconds = Math.floor((seconds/10) % 60);
 
 			        //converts our 'seconds' variable into actual remaining seconds
-			        var remainingMilli = Math.floor((seconds/1) % 6);
+			        var remainingMilli = Math.floor((seconds/1) % 10);
 
 			        //this controls the actual display
 			        document.getElementById('countdown').innerHTML = remainingSeconds + ":" + remainingMilli;
@@ -384,3 +384,19 @@ var correctOption = '';
 			
 
         });
+		
+		
+		//validates the submission of username
+		var validate = function(){
+			var thename = document.getElementsByTagName('input')[3].value;
+			if(thename == ""){
+				alert("Please write your name!");
+				return false;
+			}else if(thename.length >=16){
+				alert("Uh oh, your name is too long! Please make sure that your name is 15 characters or less!")
+				return false
+			}else if (/^[a-zA-Z0-9]*$/.test(thename) == false){
+				alert("You can only use letters and numbers!");
+				return false;
+			};
+		}

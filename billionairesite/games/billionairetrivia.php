@@ -66,7 +66,7 @@
     <div style ="clear:both;"> </div>
     
 	<div id = "quizbox">
-		
+		<div id = "quizlayer">
 		<br /> <br />
 			<div id = "startscreen">
 			<div id= "billionairetriviatitle"> BILLIONAIRE TRIVIA </div>
@@ -98,10 +98,10 @@
 		<div id = "gameoverwin">Game Over!
 
 			<div class = "totalscore">
-				Your total score is 
+				
 			</div>
 			<br/>
-				<form action = "insertname.php">
+				<form onsubmit = "return (validate())" action = "insertname.php">
 					<input type = "text" placeholder = "Input your name" name = "playername" autofocus></input>
 					<input type = "submit" value = "Submit Your Score!">
 					<input id = "finalscore" type = "hidden" name = "finalscore"></input>
@@ -113,7 +113,7 @@
 			
 			
 		</div>
-
+		</div>
 	</div>
     
     <div class="gameinstructions">
@@ -184,5 +184,10 @@
 
 
 <script src = "quizup.js"></script>
+<script>
+	
+	
+	
+</script>
 </body>
 </html>
