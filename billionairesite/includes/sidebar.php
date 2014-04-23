@@ -20,7 +20,7 @@
     
     	<p> <h2>Company Research </h2></p>
     <p id="sidebartext"> Search Any Company's Stock Quote!</p>
-    	<input type= "text" id="stockTicker" placeholder="e.g. AAPL" />
+    	<input type= "text" id="stockTicker" placeholder="e.g. Apple" />
     	<input type="submit" value="Research" onclick="searchStock()" class="submitbutton" />
     
     	<br />
