@@ -15,16 +15,64 @@
 <?php include_once("analyticstracking.php") ?>	
 	<script>
 	
-	function checkInput(){
-	var fname = document.getElementById('fname').value;
-	var lname = document.getElementById('lname').value;
-	var email = document.getElementById('email').value;
-	var subject = document.getElementById('subject').value;
-	var message = document.getElementById('message').value;
+	function validateFormOnSubmit(){
+	       var reason = "";
+	       
+	       reason += validateFname();
+	       reason += validateLname();
+	       reason += validateEmail();
+	       reason += validateSubject();
+	       reason += validateMessage();
 	
-		if (fname == "" || lname == "" || email == "" || subject == "" || message == "") {
-			alert('Please fill out all the fields');
-		}
+	       if (reason != "") {
+			      alert('Some fields need to be corrected:\n' + reason);
+			      return false;
+	       }
+	       
+	       return true;
+	}
+	
+	function validateFname() {
+	       var fname = document.getElementById('fname').value;
+	       if (fname == "") {
+	       return('Please enter a first name.\n');
+	       }
+	       return("");
+	}
+	
+	function validateLname() {
+	       var lname = document.getElementById('lname').value;
+	       if (lname=="") {
+	       return('Please enter a last name.\n' );
+	       }
+	       return("");
+	}
+	
+	function validateEmail() {
+	       var email = document.getElementById('email').value;
+	       var atpos=email.indexOf("@");
+	       var dotpos=email.lastIndexOf(".");
+	       if (atpos<1 || dotpos<atpos+2 || dotpos+2>=email.length)
+		 {
+		 return("Please enter a valid e-mail address.\n" );
+		 }
+	       return("");
+	}
+	
+	function validateSubject() {
+	       var subject = document.getElementById('subject').value;
+	       if (subject=="") {
+	       return('Please enter the subject.\n' );
+	       }
+	       return("");
+	}
+	
+	function validateMessage() {
+	       var message = document.getElementById('message').value;
+	       if (message=="") {
+	       return('Please enter a message.\n' );
+	       }
+	       return("");
 	}
 	
 	</script>
@@ -34,47 +82,8 @@
 
 
 <br style = "clear:both;"/>
-<aside id = "sidebar">
-<div id="companyresearch"> 
-    <script>
-	function searchStock() {
-	
-	var stockTicker = document.getElementById('stockTicker').value;
-	
-	if (stockTicker != "") {
-		var url = "http://investing.money.msn.com/investments/stock-price?Symbol=" + stockTicker + "&ocid=qbeb";
-		var win = window.open(url, '_blank');
-		win.focus;
-	} else {
-		alert('Please enter a stock ticker symbol.')
-	}
-	
-	
-	}
-	
-    </script>
-    
-    	<p> <h2>Company Research </h2></p>
-    <p id="sidebartext"> Search Any Company's Stock Quote!</p>
-    	<input type= "text" id="stockTicker" placeholder="e.g. AAPL" />
-    	<input type="submit" value="Research" onclick="searchStock()" class="submitbutton" />
-    
-    	<br />
-    	
-   		</div>
-    
-    <br style ="clear:both;"/>
-    <br />
-    <span id="asknatalie">Ask Natalie:</span>
-	<div id="twitter"> 
-    
-    	<a class="twitter-timeline" href="https://twitter.com/NataliePace" data-widget-id="442425881982533632">Tweets by @NataliePace</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
-
-        
-    </div>  
-</aside>
+<?php include "../includes/sidebar.php"; ?>
 
 
 <div id="main">
@@ -83,16 +92,19 @@
     Have a question or comment? We would love to hear it! 
    	<br />
     Please fill out the form below with your information or your message. 
-    </p>
+    <br />
+    <strong>*All fields are required.</strong>
+	</p>
+	
     <br />
     
     	<?php
 	if (!isset($_POST['Submit'])){
 	?>
 
-	<form id="contactinfo" action="" method="post">
-    <label> First Name </label>
-    	<input id="fname" type="text" placeholder= "John" name="firstname" onblur="checkInput()" autofocus="autofocus" /> <br />
+	<form id="contactinfo" action="" method="post" onsubmit="return validateFormOnSubmit(this)">
+    <label id="firstname"> First Name </label>
+    	<input id="fname" type="text" placeholder= "John" name="firstname" onblur="validateFname()" autofocus="autofocus" /> <br />
     <label> Last Name </label>
     	<input id="lname" type="text" placeholder="Smith" name="lastname"  /> <br />
     <label> Email Address </label>
@@ -100,7 +112,7 @@
     <label> Message Subject </label>
     	<input id="subject" type="text" placeholder="Where can I find more about your books?" name="subject" size="40"/> <br />
     <label> Your Message </label>
-    	<textarea placeholder="Message content" name="message" style="width:300px; height:200px;"></textarea> <br /> <br />
+    	<textarea placeholder="Message content" id="message" name="message" style="width:300px; height:200px;"></textarea> <br /> <br />
     
     <input type="Submit" name="Submit" class = "submitbutton" value = "Submit" style="margin-left:400px;"/>
     </form>
