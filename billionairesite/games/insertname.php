@@ -53,7 +53,7 @@
 	<?php
 		
 	        	
-	$dbconnection = mysql_connect("72.167.233.50", "npnewweb", " NPn3ww3b!");  
+	$dbconnection = mysql_connect("72.167.233.50", "npnewweb", "NPn3ww3b!");  
             	
 	if (!$dbconnection) {
 		 	 	echo "There was a PROBLEM! Error: " . mysql_error();
