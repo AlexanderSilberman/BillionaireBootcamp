@@ -1,13 +1,13 @@
 	<?php 
 	
-	$dbconnection = mysql_connect("localhost", "root", "root");  
+	$dbconnection = mysql_connect("72.167.233.50", "npnewweb", " NPn3ww3b!");  
 
 	if (!$dbconnection) {
    	 	echo "There was a PROBLEM! Error: " . mysql_error();
     exit();
 	}  
 
-	mysql_select_db("billionaire_bootcamp", $dbconnection); 
+	mysql_select_db("npnewweb", $dbconnection); 
 
 	$thesql = "SELECT quiz_game_scores.score, quiz_game_scores.user_name, score_time 
 				FROM quiz_game_scores
