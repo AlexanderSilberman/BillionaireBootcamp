@@ -34,10 +34,9 @@
                 	</ul>
             	</li>
             
-           		<li>  <a href="#" class = "student">  Student Resources </a>  
+           		<li>  <a href="/BillionaireBootcamp/billionairesite/students/index.php" class = "student">  Student Resources </a>  
  					 <ul>
-                		<li> <a href="/BillionaireBootcamp/billionairesite/students/index.php">  Glossary  </a> </li>
-                        <li> <a href="/BillionaireBootcamp/billionairesite/students/investing.php">  Investing Mistakes  </a> </li>
+                		<li> <a href="/BillionaireBootcamp/billionairesite/students/investing.php">  Investing Mistakes  </a> </li>
 						<li> <a href="/BillionaireBootcamp/billionairesite/students/cookupprofits.php">  Cooking up Profits  </a> </li>
                 	 </ul>	
             	</li> 
