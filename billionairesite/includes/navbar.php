@@ -5,7 +5,7 @@
 
 
 	<div id="top">
-	<img src="/BillionaireBootcamp/billionairesite/images/finallogo.png" style="float:left;" /> 
+	<img src="/nataliepacenew/billionairesite/images/finallogo.png" style="float:left;" /> 
 	
     <br /><br /><br />
     
@@ -26,24 +26,25 @@
 	<div id="menubox">
     	<div id="menu">
     		<ul>
-        		<li>  <a href="/BillionaireBootcamp/billionairesite" class="home narrow">  Home  </a>  </li>
-            	<li>  <a href="/BillionaireBootcamp/billionairesite/games/index.php" class = "game"> Games </a>  
+        		<li>  <a href="/nataliepacenew/billionairesite" class="home narrow">  Home  </a>  </li>
+            	<li>  <a href="/nataliepacenew/billionairesite/games/index.php" class = "game"> Games </a>  
             		<ul> 
-                		<li> <a href="/BillionaireBootcamp/billionairesite/games/thrivebudget.php"> Thrive Budget </a> </li>
-                		<li> <a href="/BillionaireBootcamp/billionairesite/games/billionairetrivia.php"> Billionaire Trivia </a> </li>
+                		<li> <a href="/nataliepacenew/billionairesite/games/thrivebudget.php"> Thrive Budget </a> </li>
+                		<li> <a href="/nataliepacenew/billionairesite/games/billionairetrivia.php"> Billionaire Trivia </a> </li>
                 	</ul>
             	</li>
             
-           		<li>  <a href="/BillionaireBootcamp/billionairesite/students/index.php" class = "student">  Student Resources </a>  
+           		<li>  <a href="#" class = "student">  Student Resources </a>  
  					 <ul>
-                		<li> <a href="/BillionaireBootcamp/billionairesite/students/investing.php">  Investing Mistakes  </a> </li>
-						<li> <a href="/BillionaireBootcamp/billionairesite/students/cookupprofits.php">  Cooking up Profits  </a> </li>
+                		<li> <a href="/nataliepacenew/billionairesite/students/index.php">  Glossary  </a> </li>
+                        <li> <a href="/nataliepacenew/billionairesite/students/investing.php">  Investing Mistakes  </a> </li>
+						<li> <a href="/nataliepacenew/billionairesite/students/cookupprofits.php">  Cooking up Profits  </a> </li>
                 	 </ul>	
             	</li> 
             
-           	 	<li> <a href="/BillionaireBootcamp/billionairesite/teacher/index.php" class = "teacher">  Teacher Resources </a> </li>
-  				<li> <a href="/BillionaireBootcamp/billionairesite/about/index.php" class="about narrow">  About </a> </li>
-           	 	<li> <a href="/BillionaireBootcamp/billionairesite/contact/index.php" class="contact narrow">  Contact </a> </li>
+           	 	<li> <a href="/nataliepacenew/billionairesite/teacher/index.php" class = "teacher">  Teacher Resources </a> </li>
+  				<li> <a href="/nataliepacenew/billionairesite/about/index.php" class="about narrow">  About </a> </li>
+           	 	<li> <a href="/nataliepacenew/billionairesite/contact/index.php" class="contact narrow">  Contact </a> </li>
                 
        		 </ul>
     <br style="clear:both" />
