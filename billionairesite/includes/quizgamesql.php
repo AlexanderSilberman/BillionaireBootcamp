@@ -1,6 +1,6 @@
-<?php 
-
-	$dbconnection = mysql_connect("72.167.233.50", "npnewweb", " NPn3ww3b!");  
+	<?php 
+	
+	$dbconnection = mysql_connect("72.167.233.50", "npnewweb", "NPn3ww3b!");  
 
 	if (!$dbconnection) {
    	 	echo "There was a PROBLEM! Error: " . mysql_error();
@@ -15,7 +15,7 @@
 -- 				AND user_scores.game_id = 2
 				ORDER BY quiz_game_scores.score DESC
 				LIMIT 0,10";
-
+				
 
 	$results = mysql_query($thesql);
 
@@ -23,5 +23,5 @@
     	echo "THERE was a PROBLEM! Error: " . mysql_error();
     exit();
 	}    
-
+	
 	?>
