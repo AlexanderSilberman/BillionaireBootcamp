@@ -33,7 +33,7 @@
 
 <br style = "clear:both;"/>
 	<?php
-	include 'sidebar.php';
+	include '../includes/sidebar.php';
 	?>
 
 
