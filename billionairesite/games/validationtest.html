@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<script src="jquery-2.0.3.min.js"></script>
+	
+	
+</head>
+<body>	
+
+	<form onsubmit = "return (validate())" action = "insertname.php">
+		<input type = "text" placeholder = "Input your name" name = "playername" autofocus></input>
+		<input type = "submit" value = "Submit Your Score!">
+		<input id = "finalscore" type = "hidden" name = "finalscore"></input>
+	</form>
+	
+</body>
+
+<script>
+
+
+var validate = function(){
+	var thename = document.getElementsByTagName('input')[0].value;
+	if(thename == ""){
+		alert("Please write your name!");
+		return false;
+	}else if(thename.length >=16){
+		alert("Uh oh, your name is too long! Please make sure that your name is 15 characters or less!")
+		return false
+	}else if (/^[a-zA-Z0-9 ]*$/.test(thename) == false){
+		alert("You can only use letters and numbers!");
+		return false;
+	};
+}
+	
+
+//$("input[type='submit']").on("mouseover", validate);
+
+	
+</script>
+</html>

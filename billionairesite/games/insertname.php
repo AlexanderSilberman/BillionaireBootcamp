@@ -1,3 +1,4 @@
+	
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -6,10 +7,10 @@
 <link rel="stylesheet" type="text/css" href="../stylesheet.css" />
 
          <?php
-
-		 	include '../includes/quizgamesql.php';
+		 
+		 	
 		 	include "../includes/navbar.php";
-
+			
 		 ?>
 
 </head>
@@ -50,9 +51,9 @@
 	
 	
 	<?php
-
-
-	$dbconnection = mysql_connect("72.167.233.50", "npnewweb", " NPn3ww3b!");  
+		
+	        	
+	$dbconnection = mysql_connect("72.167.233.50", "npnewweb", "NPn3ww3b!");  
             	
 	if (!$dbconnection) {
 		 	 	echo "There was a PROBLEM! Error: " . mysql_error();
@@ -61,22 +62,21 @@
             	
 	mysql_select_db("npnewweb", $dbconnection); 
      
-	$name = $_REQUEST["playername"];
-
-
+	$name = $_REQUEST["playername"];	
+	
 	$endscore = $_REQUEST["finalscore"];
-
+	
 	$thesqltwo = "INSERT INTO quiz_game_scores (user_name, score) 
 	VALUES ('$name', $endscore)";
-
-
+		  
+	
 	$resultstwo = mysql_query($thesqltwo);
             	
 	if (!$resultstwo) {
 		 		echo "THERE was a PROBLEM! Error: " . mysql_error();
 		 	exit();
 	}    
-
+	        	
 	?>
 	
 	
@@ -89,26 +89,30 @@
     
     <div id = "highscores">
 		<?php
-
-
+			include '../includes/quizgamesql.php';
+	
+		?>
+		<?php
+		
+		
 		$i = 0;
 		$count = 1;
 		$colors = array('scorerow','scorerow green');
-
+		
 		echo "<strong><div class = 'scorerow white'><div class = 'count'>Rank</div><div class = 'nickname'> Name </div><div class = 'score'>Score</div><div class = 'timestamp'>Date</div></div></strong><br/><br/>";
-
+		
 		while ($row = mysql_fetch_array($results)){
 			echo "<div class = '" . $colors[$i++ % 2] . "'><div class = 'count'>". $count++ . ".</div><div class = 'nickname'> ". $row["user_name"] .  "</div><div class = 'score'>" . $row["score"] . "</div><div class = 'timestamp'>" . date('m/j/y ',strtotime($row["score_time"])) . "</div></div><br/>";
-
+			
 		}
-
-
+		
+		
 		?>
 		
 		
 	 	<?php
 
-
+	 	    
 			$highscorelim = mysql_result($results, 9);
 
 	 	?>
@@ -132,7 +136,7 @@
 
     <div id="bottom">
     	<a href="http://www.nataliepace.com" id="footerlefttext">NataliePace.com</a>
-        <span id="footerrightttext">? Billionaire Bootcamp</span>
+        <span id="footerrightttext">� Billionaire Bootcamp</span>
     </div>
     
 </div>
