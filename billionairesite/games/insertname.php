@@ -62,9 +62,9 @@
             	
 	mysql_select_db("npnewweb", $dbconnection); 
      
-	$name = $_REQUEST["playername"];	
+	$name = $_POST["playername"];	
 	
-	$endscore = $_REQUEST["finalscore"];
+	$endscore = $_POST["finalscore"];
 	
 	$thesqltwo = "INSERT INTO quiz_game_scores (user_name, score) 
 	VALUES ('$name', $endscore)";

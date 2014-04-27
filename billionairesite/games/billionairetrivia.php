@@ -80,7 +80,7 @@
 				
 			</div>
 			<br/>
-				<form onsubmit = "return (validate())" action = "insertname.php">
+				<form onsubmit = "return (validate())" action = "insertname.php" method="post">
 					<input type = "text" placeholder = "Input your name" name = "playername" autofocus></input>
 					<input type = "submit" value = "Submit Your Score!">
 					<input id = "finalscore" type = "hidden" name = "finalscore"></input>
