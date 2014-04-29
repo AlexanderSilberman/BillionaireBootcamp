@@ -24,7 +24,7 @@
 </head>
 
 <body id = "game">
-<?php include_once ("includes/analyticstracking.php") ?>
+<?php include_once("../includes/analyticstracking.php") ?>	
 	
 
 
