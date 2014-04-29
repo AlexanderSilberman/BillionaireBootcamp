@@ -24,7 +24,7 @@
 </head>
 
 <body id = "game">
-<?php include "../includes/sidebar.php"; ?>
+<?php include_once ("includes/analyticstracking.php") ?>
 	
 
 
