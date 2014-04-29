@@ -35,8 +35,6 @@
     <img src="welcome.png" class="gameplaceholderimage" style="float:right;" />
 	
     
-    <div style ="clear:both;"/> </div>
-    
 	<div id="thrivebudget"> 
     <a href="/nataliepacenew/billionairesite/games/thrivebudget.php"><img src="../images/thrivebudgetgame.png" class="gameplaceholderimage" /></a>
     </div>
