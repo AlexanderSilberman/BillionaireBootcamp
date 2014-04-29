@@ -11,12 +11,13 @@
 		 	include '../includes/quizgamesql.php';
 		 	include "../includes/navbar.php";
 			
+			
 		 ?>
 
 </head>
 
 <body id = "game">
-
+<?php include_once("../includes/analyticstracking.php") ?>	
 
 <div id = "outercontainer">
 	

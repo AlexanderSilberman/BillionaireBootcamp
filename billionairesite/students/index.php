@@ -13,6 +13,7 @@
 </head>
 
 <body id = "student">
+<?php include_once("../includes/analyticstracking.php") ?>	
 
 <div id = "outercontainer">
 	
@@ -31,7 +32,7 @@
     
     <p id="sub">
         <ol>
-        	<li style="text-align:left"><a href="index.php">Glossary</a></li><br />
+        	<li style="text-align:left"><a href="glossary.php">Glossary</a></li><br />
         	<li style="text-align:left"><a href="investing.php">Top 11 Investing Mistakes</a></li><br />
             <li style="text-align:left"><a href="cookupprofits.php">Recipe for Cooking Up Profits</a></li><br />
         </ol>
