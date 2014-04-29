@@ -10,14 +10,14 @@
 		 
 		 	include '../includes/quizgamesql.php';
 		 	include "../includes/navbar.php";
-			include "../includes/analyticstracking.php";
+			
 			
 		 ?>
 
 </head>
 
 <body id = "game">
-
+<?php include "../includes/analyticstracking.php"; ?>
 
 <div id = "outercontainer">
 	
