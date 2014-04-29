@@ -30,7 +30,10 @@
 <div id="main">
 
     <div id="thrivebudgettitle"> Thrive Budget Game</div>
-    <div id="billionairetitle"> Leader Boards</div>
+    <div id="billionairetitle"> Welcome!</div>
+    
+    <img src="welcome.png" class="gameplaceholderimage" style="float:right;" />
+	
     
     <div style ="clear:both;"/> </div>
     
@@ -40,90 +43,11 @@
 	
     <div style="clear:both" /> </div>
 
-    <table id="thriveleaderboard"> 
-    	<tr>
-              <th>Rank</th>
-              <th>Last Name</th> 
-              <th>Points</th>
-              <th>Date</th>
-		</tr>
-        
-    	<tr>
-        	<td class="tablerank">1</td>
-            <td>jsmith</td>
-            <td>100 pts</td>
-			<td>3/10/14</td>
-        </tr>
-        
-        <tr>
-        	<td class="tablerank">2</td>
-            <td>jsmith</td>
-            <td>97 pts</td>
-			<td>3/10/14</td>
-        </tr>
-        
-        	<tr>
-        	<td class="tablerank">3</td>
-            <td>jsmith</td>
-            <td>95 pts</td>
-			<td>3/10/14</td>
-        </tr>
-        
-        <tr>
-        	<td class="tablerank">4</td>
-            <td>jsmith</td>
-            <td>90 pts</td>
-			<td>3/10/14</td>
-        </tr>
-        
-          <tr>
-        	<td class="tablerank">5</td>
-            <td>jsmith</td>
-            <td>85 pts</td>
-			<td>3/10/14</td>
-        </tr>
-        
-          <tr>
-        	<td class="tablerank">6</td>
-            <td>jsmith</td>
-            <td>80 pts</td>
-			<td>3/10/14</td>
-        </tr>
-        
-           <tr>
-        	<td class="tablerank">7</td>
-            <td>jsmith</td>
-            <td>75 pts</td>
-			<td>3/10/14</td>
-        </tr>
-        
-        <tr>
-        	<td class="tablerank">8</td>
-            <td>jsmith</td>
-            <td>75 pts</td>
-			<td>3/10/14</td>
-        </tr>
-        
-        <tr>
-        	<td class="tablerank">9</td>
-            <td>jsmith</td>
-            <td>75 pts</td>
-			<td>3/10/14</td>
-        </tr>
-        
-        <tr>
-        	<td class="tablerank">10</td>
-            <td>jsmith</td>
-            <td>75 pts</td>
-			<td>3/10/14</td>
-        </tr>
-        
-    </table>
 	
     <br />
     
     <div id="popularcontenttitle"> Billionaire Trivia</div>
-    <div id="billionairetitle"> Leader Boards</div>
+    <div id="billionairetitle"> Leader Board</div>
     <div style="clear:both" /> </div>
     
     <div id="thrivebudget"> 
