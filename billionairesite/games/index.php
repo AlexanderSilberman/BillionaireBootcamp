@@ -10,6 +10,7 @@
 		 
 		 	include '../includes/quizgamesql.php';
 		 	include "../includes/navbar.php";
+			include "../includes/analyticstracking.php";
 			
 		 ?>
 
