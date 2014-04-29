@@ -15,6 +15,8 @@
 </head>
 
  <body id = "about" >
+ <?php include_once("../includes/analyticstracking.php") ?>	
+
 
 <div id = "outercontainer">
 	
