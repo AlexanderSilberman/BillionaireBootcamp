@@ -34,9 +34,9 @@
                 	</ul>
             	</li>
             
-           		<li>  <a href="#" class = "student">  Student Resources </a>  
+           		<li>  <a href="/nataliepacenew/billionairesite/students/index.php" class = "student">  Student Resources </a>  
  					 <ul>
-                		<li> <a href="/nataliepacenew/billionairesite/students/index.php">  Glossary  </a> </li>
+                		<li> <a href="/nataliepacenew/billionairesite/students/glossary.php">  Glossary  </a> </li>
                         <li> <a href="/nataliepacenew/billionairesite/students/investing.php">  Investing Mistakes  </a> </li>
 						<li> <a href="/nataliepacenew/billionairesite/students/cookupprofits.php">  Cooking up Profits  </a> </li>
                 	 </ul>	
