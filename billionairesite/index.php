@@ -8,7 +8,8 @@
 </head>
 
 <body id = "home">
-
+	
+<?php include_once ("includes/analyticstracking.php") ?>
 
 
          <?php
