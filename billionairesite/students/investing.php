@@ -13,6 +13,7 @@
 </head>
 
 <body id = "student">
+<?php include_once ("includes/analyticstracking.php") ?>
 
 
 <div id = "outercontainer">
