@@ -66,15 +66,21 @@
 	
 	$endscore = $_POST["finalscore"];
 	
+	$resultstwo = '';
+	
 	$thesqltwo = "INSERT INTO quiz_game_scores (user_name, score) 
 	VALUES ('$name', $endscore)";
 		  
 	
-	$resultstwo = mysql_query($thesqltwo);
+	//to check: $name contains only letters or numbers, and $endscore contains only digits
+	if( ctype_alnum($name) && is_numeric($endscore) ) {
+	      $resultstwo = mysql_query($thesqltwo);
+	}
+	
             	
 	if (!$resultstwo) {
-		 		echo "THERE was a PROBLEM! Error: " . mysql_error();
-		 	exit();
+	       echo "THERE was a PROBLEM! Error: " . mysql_error();
+	       exit();
 	}    
 	        	
 	?>
