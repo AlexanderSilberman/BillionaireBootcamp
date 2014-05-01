@@ -13,36 +13,14 @@
 </head>
 
 <body id = "student">
-<?php include_once("analyticstracking.php") ?>
+<?php include_once("../includes/analyticstracking.php") ?>	
 
 <div id = "outercontainer">
 	
 
 <br style = "clear:both;"/>
-<aside id = "sidebar">
-<div id="companyresearch"> 
-    
-    	<p> <h2>Company Research </h2></p>
-    <p id="sidebartext"> Search Any Company's Stock Quote!</p>
-    	<input type= "text" placeholder="e.g. AAPL" />
-    	<input type="submit" value="Research" class="submitbutton" />
-    
-    	<br />
-    	
-   		</div>
-    
-    <br style ="clear:both;"/>
-    <br />
-    <span id="asknatalie">Ask Natalie:</span>
-	<div id="twitter"> 
-    
-    	<a class="twitter-timeline" href="https://twitter.com/NataliePace" data-widget-id="442425881982533632">Tweets by @NataliePace</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
-
-        
-    </div>  
-</aside>
+<?php include "../includes/sidebar.php"; ?>
 
 <div id="main">
 
