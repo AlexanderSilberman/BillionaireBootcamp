@@ -13,31 +13,47 @@
 </head>
 
 <body id = "student">
-<?php include_once("../includes/analyticstracking.php") ?>	
-
+<?php include_once("analyticstracking.php") ?>
 
 <div id = "outercontainer">
 	
 
 <br style = "clear:both;"/>
+<aside id = "sidebar">
+<div id="companyresearch"> 
+    
+    	<p> <h2>Company Research </h2></p>
+    <p id="sidebartext"> Search Any Company's Stock Quote!</p>
+    	<input type= "text" placeholder="e.g. AAPL" />
+    	<input type="submit" value="Research" class="submitbutton" />
+    
+    	<br />
+    	
+   		</div>
+    
+    <br style ="clear:both;"/>
+    <br />
+    <span id="asknatalie">Ask Natalie:</span>
+	<div id="twitter"> 
+    
+    	<a class="twitter-timeline" href="https://twitter.com/NataliePace" data-widget-id="442425881982533632">Tweets by @NataliePace</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
-<?php include "../includes/sidebar.php"; ?>
 
+        
+    </div>  
+</aside>
 
 <div id="main">
-<br /> 
-<h2> Part 1 </h2> 
-<br /> 
-<h3> Get Educated </h3>
 
-<br />
 
-<h4> Chapter 2 The Three-Ingredient Recipe for Cooking Up Profits </h4>
-<br />
+<p style="font-size:30px; text-align: left;">Three-Ingredient Recipe for Cooking Up Profits </p>
+
+<p style="font-size:22px;text-align: left;">
 “If you like the store, chances are you’ll love the stock.”
-—Peter Lynch
-<br />
-<br />
+—Peter Lynch</p>
+
+<p style="text-align: left; margin: auto;">
 I got into this business because a large number of my friends came crying to me at
 the end of 2001, saying that their husbands or their brokers had lost half or more of their
 stock portfolio, and begging me to “teach them what I know.” They were quite a bit more
@@ -102,58 +118,64 @@ investment passes the muster of this recipe. Keep it handy. Be religious about a
 it. It works—every time.
 <br /><br />
 <h4> Natalie’s Note </h4>
-<br /><br />
+
+<p style="text-align:left"> 
 There is one key consideration to the Three-Ingredient Investment Recipe for
 successful investing in individual stocks and investments: You should not be trading your
 nest egg or your house, condo or apartment to do it. That would be like juggling eggs, too
 risky that you’ll break a few. When setting up and/or reviewing your retirement plan and
 the home that you live in, be sure you:<br />
- <ul> <li> have your money properly allocated across assets
+
+ <ul style="text-align:left"> <li> Have your money properly allocated across assets
 (bonds, money markets, stocks, et cetera). </li>
-<li> have a long-term plan. </li>
-<li> employ a rational roadmap to get there. </li>
-<li> make sure that you will enjoy your investments (so you can
+<li> Have a long-term plan. </li>
+<li> Employ a rational roadmap to get there. </li>
+<li> Make sure that you will enjoy your investments (so you can
 sleep at night). </li>
-<li> keep enough cash on hand. </li>
- <li> protect a percentage equal to your age by investing that
+<li> Keep enough cash on hand. </li>
+ <li> Protect a percentage equal to your age by investing that
 portion in bonds, treasury bills, certificates of deposits or money markets. </li>
-<li> employ an experienced, ethical, and talented Certified
+<li> Employ an experienced, ethical, and talented Certified
 Financial Planner. </li>
-<li> maximize as many of the tax-free strategies as possible! </li> </ul>
-<br />
+<li> Maximize as many of the tax-free strategies as possible! </li> </ul>
+</p>
+<p style="text-align:left">
 We’ll discuss nest-egg strategies later on in the book. For now, we’re going to
 focus on earning great gains in individual stocks (a smaller portion of your retirement
 plan) by starting with your heart, seasoning with the wisdom you already have as
 shoppers and adding a little brainpower to the mix.
-
-<h3> Natalie’s Three-Ingredient Investment Recipe for Cooking Up
+</p>
+<h3 style="text-align:left"> Natalie’s Three-Ingredient Investment Recipe for Cooking Up
 Profits </h3>
 
-<br />1. Start with what you know and love.
-<br />2. Pick the leader in the sector (in real estate, it’s location, location, location).
-<br />3. Buy low; sell high (easy to say; hard to do).
-<br />Any time a potential investment seems too complicated and twists your mind into
+<ul style="text-align:left"> <ol>1.  Start with what you know and love. </ol>
+ 	 <ol> 2. Pick the leader in the sector (in real estate, it’s location, location, location). </ol>
+	 <ol> 3. Buy low; sell high (easy to say; hard to do). </ol>
+	 <ol> Any time a potential investment seems too complicated and twists your mind into
 endless debates, go back to the simplicity of this formula. If it doesn’t pass this test, just
 say, “Not now.” You still need more information before you can make a well-informed
-decision.
+decision. </ol>
+</ul>
 
-<br /> <br />
+<p style="text-align:left">
 Be disciplined about following the recipe. You need all of the ingredients, and if
 you take the steps out of order, you could end up with a brick that sinks your profits,
 rather than a cake that rises light and fluffy to Cloud 9. Since we all want to vacation on
 Cloud 9 before we’re ninety, let’s sharpen your skills and start cooking.
-
+</p>
+</p>
+</p>
 <br />
-</div>
+
+</span>
 </div>
 
-    <div style="clear:both" /> </div>
-
+<div style="clear:both" /> </div>
 <div id="footer">
 
     <div id="bottom">
     	<a href="http://www.nataliepace.com" id="footerlefttext">NataliePace.com</a>
-        <span id="footerrightttext"> &copy; Billionaire Bootcamp</span>
+        <span id="footerrightttext">© Billionaire Bootcamp</span>
     </div>
     
 </div>
