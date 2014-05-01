@@ -16,7 +16,9 @@ var hero={
 	hours:40,
 	livingcosts:0,
 	stress:50,
-	health:50	
+	health:50,
+	x:0,
+	y:0	
 }
 var stats={
 	money:5000,
@@ -562,6 +564,47 @@ var update = function (modifier) {
 				textDisplay.say("You invested $"+stats.tcharity+stats.tinvest+stats.tfunL+stats.tfunS+stats.tinvest+" into your life.\nPressA to restart");
 				mode="gameover";
 			}
+		}
+	}
+	if(mode=="gameover"){
+		if(65 in keysDown){
+			
+			  hero={
+			  speed:128,
+			  goneToWork:false,
+			  activity:false,
+			  sick:false,
+			  wages:15.00,
+			  hours:40,
+			  livingcosts:0,
+			  stress:50,
+			  health:50,
+			  x:320,
+			  y:288
+			  
+			}
+			stats={
+			  money:5000,
+			  charity:0,
+			  funL:0,
+			  funS:0,
+			  invest:0,
+			  education:0,
+			  sustain:300,
+			  tcharity:0,
+			  tfunL:0,
+			  tfunS:0,
+			  tinvest:0,
+			  teducation:0,
+			  tsustain:0
+			  
+			}
+			week=0;	
+			mode="moving";
+			txtbox=false;
+			delete keysDown[65];
+			textDisplay.clear();
+			
 		}
 	}
 };
