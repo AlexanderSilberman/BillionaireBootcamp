@@ -132,9 +132,9 @@ var mapRows = 8;
 var mapCols = 10;
 
 var tileMap = [
-       [0,1,1,47,58,59,39,43,1,2]
-   ,   [10,52,52,11,68,69,49,53,23,12]
-   ,   [10,62,62,11,11,11,11,11,33,12]
+       [0,52,52,47,58,59,39,43,1,2]
+   ,   [10,62,62,67,68,69,49,53,23,12]
+   ,   [10,11,11,11,11,11,11,11,33,12]
    ,   [10,11,11,11,11,11,11,11,37,12]
    ,   [10,11,11,65,66,11,11,11,11,12]
    ,   [10,11,11,61,61,61,61,11,11,12]
@@ -178,7 +178,7 @@ var imageRepository = new function() {
 		imageLoaded();	
 	}
 	//Set the images sources
-	this.tilesheet.src = "images/House.gif";
+	this.tilesheet.src = "images/House.png";
 	this.hero.src = "images/Hero.png";
 	this.textbox.src = "images/Textbox.png";
 	this.cellphone.src = "images/Phone.png";
@@ -214,7 +214,7 @@ var render =function () {
 		
 		//Stats section
 		game.ctx.fillStyle="white";
-		game.ctx.fillRect(0,500,500,500);
+		game.ctx.fillRect(0,520,500,500);
 		game.ctx.drawImage(imageRepository.hero, hero.x, hero.y, 64, 64);
 		game.ctx.fillStyle="rgb(0,0,0)";
 		game.ctx.font = "24px Helvetica";

@@ -24,7 +24,7 @@
 
 
 
-<div id="main">
+
 
 <div id="main">
 
@@ -32,9 +32,9 @@
     
     <div style ="clear:both;"/> </div>
     
-	<div class="gamepagegamecontainer" id="canvascontainer"> 
-    
-    </div>
+	<canvas class="gamepagegamecontainer" id="canvascontainer"> 
+    	Your browser does not support canvas. Please try again with a different browser.
+    </canvas>
     
     <div class="gameinstructions">
   <br /> <strong>Financial Instructions:</strong> The basic breakdown of a “Double Your Fun” budget is 50 percent to Thrive and 50 percent to Survive.  The object of the game is to find the best way to allocate your earnings across the various spending buckets.  The better you allocate, the higher your score! 
@@ -66,7 +66,6 @@
 
 </div>
 
-</div>
     <div style="clear:both" /> </div>
 
 <div id="footer">
