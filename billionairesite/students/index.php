@@ -26,7 +26,7 @@
 
 <div id="main">
 
-	<p id="termstoknow">Student Resources</p>
+	<div id="studentheadlines">Student Resources</div>
     
     <p id="sub">Use the following three resources to help you become financially literate!</p>
     

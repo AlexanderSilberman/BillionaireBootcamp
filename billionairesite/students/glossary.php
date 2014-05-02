@@ -26,9 +26,9 @@
 
 <div id="main">
 
-	<p id="termstoknow"> 
+	<div id="studentheadlines"> 
     Terms to Know
-    </p>
+    </div>
     
     <p id="sub"> 
     Learn these tems to become a financial guru!

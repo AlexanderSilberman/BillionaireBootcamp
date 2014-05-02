@@ -27,22 +27,22 @@
 
 <div id="main">
 
-    <div id="aboutwebsite">
-    <span style="font-size:30px;">Top 11 Investing Mistakes</span>
-    <p>Mistake # 1: Following Analyst Recommendations</p>
-    <p>Mistake # 2: Bankruptcy Buying</p>
-    <p>Mistake # 3: Scooping Up “Pet Rocks”</p>
-    <p>Mistake # 4: Chasing Hot Tips</p>
-    <p>Mistake # 5: Taking “Sure Shots”</p>
-    <p>Mistake # 6: Panicking (or Swooning) over Front Page
+    
+    <div id="studentheadlines">Top 11 Investing Mistakes</div>
+    <p style="text-align:left;">Mistake # 1: Following Analyst Recommendations</p>
+    <p style="text-align:left;">Mistake # 2: Bankruptcy Buying</p>
+    <p style="text-align:left;">Mistake # 3: Scooping Up “Pet Rocks”</p>
+    <p style="text-align:left;">Mistake # 4: Chasing Hot Tips</p>
+    <p style="text-align:left;">Mistake # 5: Taking “Sure Shots”</p>
+    <p style="text-align:left;">Mistake # 6: Panicking (or Swooning) over Front Page
 Headlines
 </p>
-    <p>Mistake # 7: Falling for Company Hype</p>
-    <p>Mistake # 8: Having Blind Faith</p>
-    <p>Mistake # 9: Betting on the “Hail Mary” Investment</p>
-    <p>Mistake # 10: Keeping Too Much Stock in Your Employer’s
+    <p style="text-align:left;">Mistake # 7: Falling for Company Hype</p>
+    <p style="text-align:left;">Mistake # 8: Having Blind Faith</p>
+    <p style="text-align:left;">Mistake # 9: Betting on the “Hail Mary” Investment</p>
+    <p style="text-align:left;">Mistake # 10: Keeping Too Much Stock in Your Employer’s
 Company</p>
-    <p>Mistake # 11: Employing Friends and Lovers</p>
+    <p style="text-align:left;">Mistake # 11: Employing Friends and Lovers</p>
  
     
     </div>

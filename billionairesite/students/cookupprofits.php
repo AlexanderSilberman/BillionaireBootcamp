@@ -25,9 +25,9 @@
 <div id="main">
 
 
-<p style="font-size:30px; text-align: left;">Three-Ingredient Recipe for Cooking Up Profits </p>
+<div id="studentheadlines">Three-Ingredient Recipe for Cooking Up Profits </div>
 
-<p style="font-size:22px;text-align: left;">
+<!--<p style="font-size:22px;text-align: left;">
 “If you like the store, chances are you’ll love the stock.”
 —Peter Lynch</p>
 
@@ -95,7 +95,7 @@ complicated, or the statistics make your head swim, make sure that your desired
 investment passes the muster of this recipe. Keep it handy. Be religious about adhering to
 it. It works—every time.
 <br /><br />
-<h4> Natalie’s Note </h4>
+<h4> Natalie’s Note </h4>-->
 
 <p style="text-align:left"> 
 There is one key consideration to the Three-Ingredient Investment Recipe for
