@@ -378,6 +378,18 @@ var update = function (modifier) {
 				hero.stress+=5;
 				hero.health-=2;
 				//console.log(total);
+				if(hero.health<=0){
+		 			 textDisplay.clear();
+		 			 textDisplay.clear();
+		  			 txtbox=true;
+		  			 textDisplay.clear();
+		  			 textDisplay.say("Game Over. You died from poor health");
+					 textDisplay.say("");
+		    		 textDisplay.say("You made $"+(stats.money-5000));
+					  textDisplay.say("You invested $"+(stats.tcharity+stats.teducation+stats.tfunL+stats.tfunS+stats.tinvest)+" into your life.\nPress A to restart");
+					 mode="gameover";
+					 return;
+	  }
 				textDisplay.say("You earned $"+(hero.wages*hero.hours));
 				textDisplay.say("LIVING IS EXPENSIVE");
 				textDisplay.say("Life costs you $"+total);
@@ -401,7 +413,7 @@ var update = function (modifier) {
 		   if(!hero.activity){
 			  cur=true;
 			  textDisplay.say("Who will you call?");
-			  textDisplay.say("Call GoodWill (-$30/M)");
+			  textDisplay.say("Call GoodWill (-$30/W)");
 			  textDisplay.say("Friends (-$100)");
 			  textDisplay.say("Call Stock Broker (-500)");
 			  textDisplay.say("Upgrade House (-5000)");
@@ -422,7 +434,7 @@ var update = function (modifier) {
 			textDisplay.say("What website?");
 			textDisplay.say("Online classes (-$1500)");
 			textDisplay.say("Add to bank funds (-200)");
-			textDisplay.say("Play video games ($15/M");
+			textDisplay.say("Play video games ($15/W)");
 			textDisplay.say("Resarch Stocks (-1000)");
 		  }
 		  else{
@@ -627,23 +639,40 @@ var events = function(){
 	  }
 	  if((stats.teducation/stats.tsustain)>=0.2){
 		  
-		  if(ran<=6 && ran>=5){
+		  if(ran<=7 && ran>=6){
 			  textDisplay.say("You learned a new tech. Wages increase to $"+hero.wages*1.5*hero.hours+".");
 			  hero.wages=hero.wages*1.5;
 			  }
 		  }
 	  if((stats.tfunL/stats.tsustain)>0.1){
-			  textDisplay.say("Charity is tax deductible! You gain $"+stats.tcharity*0.5+" back.");
+		  if(ran==4 || ran==5){
+			  textDisplay.say("Life is going great!");
+		 	 }
 		  }
 	  if((stats.tfunS/stats.tsustain)>0.1){
+		  if(ran==2 || ran==3){
 			  textDisplay.say("Charity is tax deductible! You gain $"+stats.tcharity*0.5+" back.");
+		 	 }
 		  }
 	  if((stats.tinvest/stats.tsustain)>0.1){
-		  textDisplay.say("Charity is tax deductible! You gain $"+stats.tcharity*0.5+" back.");
+		  if(ran==1){
+		  	textDisplay.say("Charity is tax deductible! You gain $"+stats.tcharity*0.5+" back.");
+		  	}
 		  }
 	  
 	  if(hero.stress>=90){
-		  
+		  textDisplay.say("Too much stress! Your health is decreasing!")
+		  hero.health-=10;
+	  }
+	  if(hero.health<=0){
+		  textDisplay.clear();
+		  textDisplay.clear();
+		  txtbox=true;
+		  textDisplay.clear();
+		  textDisplay.say("Game Over. You died from poor health");
+		   textDisplay.say("You made $"+(stats.money-5000));
+				textDisplay.say("You invested $"+(stats.tcharity+stats.teducation+stats.tfunL+stats.tfunS+stats.tinvest)+" into your life.\nPress A to restart");
+				mode="gameover";
 	  }
 	}
 }
