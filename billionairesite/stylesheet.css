@@ -545,6 +545,12 @@ nav ul ul li a:hover {
 	font-size:20px;
 	}
 	
+#studentheadlines{
+	text-align:left; 
+	font-family:Arial, Helvetica, sans-serif; 
+	font-size:30px;
+	}
+	
 #sub{
 	text-align:left;
 	font-family:Arial, Helvetica, sans-serif; 
@@ -578,7 +584,7 @@ table,th,td {
 	width:685px;
 	height:auto;
 	//border-style:solid;
-	padding:10px;
+	//padding:10px;
 }
 
 #aboutnatalie{
@@ -587,7 +593,7 @@ table,th,td {
 	width:685px;
 	height:auto;
 	//border-style:solid;
-	padding:10px;
+	//padding:10px;
 }
 
 .teacherresources {
