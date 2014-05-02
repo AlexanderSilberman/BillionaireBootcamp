@@ -95,7 +95,7 @@ var game= new function(){
 		if(this.canvas.getContext) {
 		  this.ctx = this.canvas.getContext("2d");
 		  this.canvas.width = 640;
-		  this.canvas.height = 576;
+		  this.canvas.height = 620;
 		  var can=document.getElementById("canvascontainer");
 		  can.appendChild(this.canvas);
 		  return true;
@@ -213,8 +213,8 @@ var render =function () {
 		//guess=false;
 		
 		//Stats section
-		game.ctx.fillStyle="white";
-		game.ctx.fillRect(0,520,500,500);
+		game.ctx.fillStyle="grey";
+		game.ctx.fillRect(0,520,800,500);
 		game.ctx.drawImage(imageRepository.hero, hero.x, hero.y, 64, 64);
 		game.ctx.fillStyle="rgb(0,0,0)";
 		game.ctx.font = "24px Helvetica";
@@ -222,6 +222,13 @@ var render =function () {
 		game.ctx.textBaseline = "top";
 		game.ctx.fillText("Cash=" + stats.money, 128,520,5000);
 		game.ctx.fillText("Stress=" + hero.stress, 128,550,5000);
+		game.ctx.fillText("Health=" + hero.health, 128,580,5000);
+		game.ctx.fillText("School=" + stats.teducation, 280,550,5000);
+		game.ctx.fillText("Charity=" + stats.tcharity, 280,520,5000);
+		game.ctx.fillText("S Fun =" + stats.tfunS, 280,580,5000);
+		game.ctx.fillText("L Fun =" + stats.tfunL, 450,520,5000);
+		game.ctx.fillText("Invest =" + stats.tinvest, 450,550,5000);
+		game.ctx.fillText("Sustain =" + stats.tsustain, 450,580,5000);
 		game.ctx.fillText("Week "+week, 20, 520, 5000);
 		if(txtbox==true){
 		  textDisplay.update();
@@ -370,7 +377,7 @@ var update = function (modifier) {
 				stats.money+=hero.wages*hero.hours-total;
 				hero.stress+=5;
 				hero.health-=2;
-				console.log(total);
+				//console.log(total);
 				textDisplay.say("You earned $"+(hero.wages*hero.hours));
 				textDisplay.say("LIVING IS EXPENSIVE");
 				textDisplay.say("Life costs you $"+total);
@@ -550,18 +557,18 @@ var update = function (modifier) {
 			hero.goneToWork=false;
 			hero.activity=false;
 			stats.tcharity+=stats.charity;
-			stats.teducation=stats.education;
-			stats.tfunL=stats.funL;
-			stats.tfunS=stats.funS
-			stats.tinvest=stats.invest;
-			stats.tsustain=stats.sustain;
+			stats.teducation+=stats.education;
+			stats.tfunL+=stats.funL;
+			stats.tfunS+=stats.funS
+			stats.tinvest+=stats.invest;
+			stats.tsustain+=stats.sustain;
 			week++;
 			
 			if(week>=10){
 				txtbox=true;
 				textDisplay.say("Game Over.");
 				textDisplay.say("You made $"+(stats.money-5000));
-				textDisplay.say("You invested $"+stats.tcharity+stats.tinvest+stats.tfunL+stats.tfunS+stats.tinvest+" into your life.\nPressA to restart");
+				textDisplay.say("You invested $"+(stats.tcharity+stats.teducation+stats.tfunL+stats.tfunS+stats.tinvest)+" into your life.\nPressA to restart");
 				mode="gameover";
 			}
 		}
@@ -612,10 +619,32 @@ var update = function (modifier) {
 var events = function(){
 	var ran=Math.floor((Math.random()*10)+1);
 	var rand=Math.floor((Math.random()*5)+1);
-	if((stats.tcharity/stats.tsustain)>=0.1){
-		if(ran>=7){
-				textDisplay.say("Charity is tax deductible! You gain $"+stats.tcharity*0.5+" back.");
-		}
+	if(stats.tsustain>0){
+	  if((stats.tcharity/stats.tsustain)>=0.1){
+		  if(ran>=8){
+			  textDisplay.say("Charity is tax deductible! You gain $"+stats.tcharity*0.5+" back.");
+		  }
+	  }
+	  if((stats.teducation/stats.tsustain)>=0.2){
+		  
+		  if(ran<=6 && ran>=5){
+			  textDisplay.say("You learned a new tech. Wages increase to $"+hero.wages*1.5*hero.hours+".");
+			  hero.wages=hero.wages*1.5;
+			  }
+		  }
+	  if((stats.tfunL/stats.tsustain)>0.1){
+			  textDisplay.say("Charity is tax deductible! You gain $"+stats.tcharity*0.5+" back.");
+		  }
+	  if((stats.tfunS/stats.tsustain)>0.1){
+			  textDisplay.say("Charity is tax deductible! You gain $"+stats.tcharity*0.5+" back.");
+		  }
+	  if((stats.tinvest/stats.tsustain)>0.1){
+		  textDisplay.say("Charity is tax deductible! You gain $"+stats.tcharity*0.5+" back.");
+		  }
+	  
+	  if(hero.stress>=90){
+		  
+	  }
 	}
 }
 
@@ -679,7 +708,7 @@ var check = function(direction, loc){
 			
 			newy=Math.ceil(loc/64);
 			if(newy==(y+1)){
-				console.log(newy);
+				//console.log(newy);
 				hero.y=(y)*64;
 				return false;
 			}
