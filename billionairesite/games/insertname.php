@@ -56,7 +56,7 @@
 	$dbconnection = mysql_connect("72.167.233.50", "npnewweb", "NPn3ww3b!");  
             	
 	if (!$dbconnection) {
-		 	 	echo "There was a PROBLEM! Error: " . mysql_error();
+		 	 	echo "There was a PROBLEM! Error: No DB Connection " . mysql_error();
 		 	exit();
 	}  
             	
@@ -66,7 +66,7 @@
 	
 	$endscore = $_POST["finalscore"];
 	
-	$resultstwo = '';
+	//$resultstwo = '';
 	
 	$thesqltwo = "INSERT INTO quiz_game_scores (user_name, score) 
 	VALUES ('$name', $endscore)";
@@ -79,7 +79,7 @@
 	
             	
 	if (!$resultstwo) {
-	       echo "THERE was a PROBLEM! Error: " . mysql_error();
+	       echo "THERE was a PROBLEM! Error: SQL didn't submit" . mysql_error();
 	       exit();
 	}    
 	        	
