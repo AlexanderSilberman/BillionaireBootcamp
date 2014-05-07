@@ -1,0 +1,204 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf370
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\fs24 \cf0 -- phpMyAdmin SQL Dump\
+-- version 2.11.11.3\
+-- http://www.phpmyadmin.net\
+--\
+-- Host: 72.167.233.50\
+-- Generation Time: May 06, 2014 at 05:27 PM\
+-- Server version: 5.5.33\
+-- PHP Version: 5.1.6\
+\
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";\
+\
+--\
+-- Database: `npnewweb`\
+--\
+\
+-- --------------------------------------------------------\
+\
+--\
+-- Table structure for table `games`\
+--\
+\
+CREATE TABLE `games` (\
+  `game_id` int(11) NOT NULL,\
+  `game_name` varchar(50) NOT NULL,\
+  PRIMARY KEY (`game_id`)\
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;\
+\
+--\
+-- Dumping data for table `games`\
+--\
+\
+INSERT INTO `games` VALUES(1, 'Thrive Budget');\
+INSERT INTO `games` VALUES(2, 'Financial Quiz');\
+\
+-- --------------------------------------------------------\
+\
+--\
+-- Table structure for table `quiz_game_scores`\
+--\
+\
+CREATE TABLE `quiz_game_scores` (\
+  `score_id` int(11) NOT NULL AUTO_INCREMENT,\
+  `user_name` varchar(15) NOT NULL,\
+  `score` int(15) NOT NULL,\
+  `score_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,\
+  PRIMARY KEY (`score_id`)\
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=58 ;\
+\
+--\
+-- Dumping data for table `quiz_game_scores`\
+--\
+\
+INSERT INTO `quiz_game_scores` VALUES(1, 'Drew Terry', 460, '2014-04-09 15:45:07');\
+INSERT INTO `quiz_game_scores` VALUES(2, 'Ganesh', 75, '2014-04-09 15:57:28');\
+INSERT INTO `quiz_game_scores` VALUES(3, 'Javan', 46, '2014-04-09 15:58:17');\
+INSERT INTO `quiz_game_scores` VALUES(4, 'Vinay', 322, '2014-04-09 16:02:11');\
+INSERT INTO `quiz_game_scores` VALUES(5, 'Alex', 165, '2014-04-09 18:26:17');\
+INSERT INTO `quiz_game_scores` VALUES(6, 'Erika Ignacio', 140, '2014-04-09 22:37:29');\
+INSERT INTO `quiz_game_scores` VALUES(7, 'Jerry', 100, '2014-04-09 22:38:00');\
+INSERT INTO `quiz_game_scores` VALUES(8, 'Ashley', 178, '2014-04-09 22:38:21');\
+INSERT INTO `quiz_game_scores` VALUES(9, 'Pat', 0, '2014-04-09 22:38:57');\
+INSERT INTO `quiz_game_scores` VALUES(10, 'Erika', 92, '2014-04-09 22:39:33');\
+INSERT INTO `quiz_game_scores` VALUES(11, 'Drew', 95, '2014-04-09 22:57:27');\
+INSERT INTO `quiz_game_scores` VALUES(12, '', 84, '2014-04-10 15:07:22');\
+INSERT INTO `quiz_game_scores` VALUES(13, '', 84, '2014-04-10 15:11:25');\
+INSERT INTO `quiz_game_scores` VALUES(14, 'Drew', 182, '2014-04-10 15:58:10');\
+INSERT INTO `quiz_game_scores` VALUES(15, 'Drewt', 240, '2014-04-10 16:12:41');\
+INSERT INTO `quiz_game_scores` VALUES(16, 'Erika', 248, '2014-04-10 16:14:01');\
+INSERT INTO `quiz_game_scores` VALUES(17, 'Drew T', 532, '2014-04-10 16:19:11');\
+INSERT INTO `quiz_game_scores` VALUES(18, 'Erika I', 372, '2014-04-10 16:25:26');\
+INSERT INTO `quiz_game_scores` VALUES(19, 'Drew', 555, '2014-04-10 16:30:09');\
+INSERT INTO `quiz_game_scores` VALUES(20, 'Ganesh', 535, '2014-04-10 17:01:47');\
+INSERT INTO `quiz_game_scores` VALUES(21, 'Henry', 548, '2014-04-17 16:36:55');\
+INSERT INTO `quiz_game_scores` VALUES(22, 'Ashley', 461, '2014-04-17 16:37:50');\
+INSERT INTO `quiz_game_scores` VALUES(23, 'Alex', 545, '2014-04-19 19:30:01');\
+INSERT INTO `quiz_game_scores` VALUES(24, 'Alexander', 473, '2014-04-19 19:34:38');\
+INSERT INTO `quiz_game_scores` VALUES(25, 'Sally', 376, '2014-04-22 18:28:40');\
+INSERT INTO `quiz_game_scores` VALUES(26, 'Emily 43 -0)', 575, '2014-04-22 20:39:22');\
+INSERT INTO `quiz_game_scores` VALUES(27, 'Drew Terry', 837, '2014-04-22 20:56:18');\
+INSERT INTO `quiz_game_scores` VALUES(28, 'Sarah', 698, '2014-04-22 21:00:29');\
+INSERT INTO `quiz_game_scores` VALUES(29, 'DrewT', 696, '2014-04-22 21:02:31');\
+INSERT INTO `quiz_game_scores` VALUES(30, 'Alex', 839, '2014-04-22 21:04:24');\
+INSERT INTO `quiz_game_scores` VALUES(31, 'Jimbo', 667, '2014-04-22 22:19:30');\
+INSERT INTO `quiz_game_scores` VALUES(32, 'Vinay', 612, '2014-04-22 22:34:00');\
+INSERT INTO `quiz_game_scores` VALUES(33, 'Leah', 985, '2014-04-23 18:49:27');\
+INSERT INTO `quiz_game_scores` VALUES(34, 'Alex', 1023, '2014-04-23 21:13:31');\
+INSERT INTO `quiz_game_scores` VALUES(35, 'a', 651, '2014-04-24 18:13:01');\
+INSERT INTO `quiz_game_scores` VALUES(36, 'jav', 588, '2014-04-24 18:16:47');\
+INSERT INTO `quiz_game_scores` VALUES(37, 'jav', 588, '2014-04-24 18:22:51');\
+INSERT INTO `quiz_game_scores` VALUES(38, 'jav', 588, '2014-04-24 18:27:13');\
+INSERT INTO `quiz_game_scores` VALUES(39, 'jav', 588, '2014-04-24 18:44:44');\
+INSERT INTO `quiz_game_scores` VALUES(40, 'jav', 588, '2014-04-24 19:18:23');\
+INSERT INTO `quiz_game_scores` VALUES(41, 'Erika', 786, '2014-04-24 23:06:10');\
+INSERT INTO `quiz_game_scores` VALUES(42, 'jav', 588, '2014-04-24 23:17:59');\
+INSERT INTO `quiz_game_scores` VALUES(43, 'abcd', 323, '2014-04-24 23:19:23');\
+INSERT INTO `quiz_game_scores` VALUES(44, 'Jeremy', 1065, '2014-04-24 23:41:01');\
+INSERT INTO `quiz_game_scores` VALUES(45, 'Erika', 786, '2014-04-24 23:44:19');\
+INSERT INTO `quiz_game_scores` VALUES(46, 'Erika', 786, '2014-04-24 23:44:57');\
+INSERT INTO `quiz_game_scores` VALUES(47, 'Janice', 821, '2014-04-26 18:56:44');\
+INSERT INTO `quiz_game_scores` VALUES(48, 'Ron', 821, '2014-04-26 18:57:03');\
+INSERT INTO `quiz_game_scores` VALUES(49, 'jav', 888, '2014-04-26 19:36:09');\
+INSERT INTO `quiz_game_scores` VALUES(50, 'Alex', 1200, '2014-04-27 01:18:51');\
+INSERT INTO `quiz_game_scores` VALUES(51, 'Billionaire', 1698, '2014-04-30 16:20:57');\
+INSERT INTO `quiz_game_scores` VALUES(52, 'B1', 1299, '2014-04-30 16:22:08');\
+INSERT INTO `quiz_game_scores` VALUES(53, 'Jimmy', 891, '2014-04-30 17:16:06');\
+INSERT INTO `quiz_game_scores` VALUES(54, 'Rachel', 1258, '2014-04-30 17:44:43');\
+INSERT INTO `quiz_game_scores` VALUES(55, 'James', 1167, '2014-04-30 20:08:36');\
+INSERT INTO `quiz_game_scores` VALUES(56, 'Alexander', 1216, '2014-05-01 13:35:03');\
+INSERT INTO `quiz_game_scores` VALUES(57, 'B', 1517, '2014-05-01 13:36:47');\
+\
+-- --------------------------------------------------------\
+\
+--\
+-- Table structure for table `user`\
+--\
+\
+CREATE TABLE `user` (\
+  `user_id` int(11) NOT NULL AUTO_INCREMENT,\
+  `fname` varchar(20) NOT NULL,\
+  `lname` varchar(20) NOT NULL,\
+  `nickname` varchar(20) NOT NULL,\
+  `email` varchar(50) NOT NULL,\
+  `password` varchar(20) NOT NULL,\
+  PRIMARY KEY (`user_id`)\
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=15 ;\
+\
+--\
+-- Dumping data for table `user`\
+--\
+\
+INSERT INTO `user` VALUES(0, '', '', 'Erika', '', '');\
+INSERT INTO `user` VALUES(1, 'Drew', 'Terry', 'Drew', 'drewterr@usc.edu', 'password');\
+INSERT INTO `user` VALUES(2, 'Javan', 'Shah', 'Javvy', 'javan@usc.edu', 'password123');\
+INSERT INTO `user` VALUES(3, 'George', 'Clooney', 'george', 'george@xxx.com', 'password1');\
+INSERT INTO `user` VALUES(4, 'Luke', 'Skywalker', 'Lucas', 'luke@xxx.org', 'mypassword');\
+INSERT INTO `user` VALUES(5, 'Frodo', 'Baggins', 'Frodo', 'frodo@xxx.edu', 'hello');\
+INSERT INTO `user` VALUES(6, '', '', 'Erika', '', '');\
+INSERT INTO `user` VALUES(7, '', '', 'Erika', '', '');\
+INSERT INTO `user` VALUES(8, '', '', 'Drewseph', '', '');\
+INSERT INTO `user` VALUES(9, '', '', '', '', '');\
+INSERT INTO `user` VALUES(10, '', '', 'Erika Ignacio', '', '');\
+INSERT INTO `user` VALUES(11, '', '', 'Erika Ignacio', '', '');\
+INSERT INTO `user` VALUES(12, '', '', 'Drewterry', '', '');\
+INSERT INTO `user` VALUES(13, '', '', 'DREW TERRY', '', '');\
+INSERT INTO `user` VALUES(14, '', '', 'asdfsadf', '', '');\
+\
+-- --------------------------------------------------------\
+\
+--\
+-- Table structure for table `user_scores`\
+--\
+\
+CREATE TABLE `user_scores` (\
+  `score_id` int(11) NOT NULL AUTO_INCREMENT,\
+  `user_id` int(11) NOT NULL,\
+  `game_id` int(11) NOT NULL,\
+  `score` int(11) NOT NULL,\
+  `timestamp` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,\
+  `level` int(11) NOT NULL,\
+  PRIMARY KEY (`score_id`),\
+  UNIQUE KEY `score_id` (`score_id`),\
+  KEY `user_id` (`user_id`)\
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=19 ;\
+\
+--\
+-- Dumping data for table `user_scores`\
+--\
+\
+INSERT INTO `user_scores` VALUES(0, 3, 4, 44, '2014-03-02 19:35:50', 2);\
+INSERT INTO `user_scores` VALUES(1, 1, 1, 100, '2014-03-02 01:00:00', 0);\
+INSERT INTO `user_scores` VALUES(2, 1, 2, 1234, '0000-00-00 00:00:00', 2);\
+INSERT INTO `user_scores` VALUES(3, 2, 1, 5854, '2014-03-02 19:28:30', 0);\
+INSERT INTO `user_scores` VALUES(4, 2, 2, 456756, '2014-03-02 19:28:30', 4);\
+INSERT INTO `user_scores` VALUES(5, 3, 2, 0, '2014-03-02 19:32:31', 2);\
+INSERT INTO `user_scores` VALUES(6, 4, 2, 8653, '2014-03-02 19:32:31', 2);\
+INSERT INTO `user_scores` VALUES(7, 5, 1, 23, '2014-03-02 19:32:31', 0);\
+INSERT INTO `user_scores` VALUES(8, 3, 2, 2348, '2014-03-02 19:32:31', 1);\
+INSERT INTO `user_scores` VALUES(9, 4, 1, 46345, '2014-03-02 19:32:31', 0);\
+INSERT INTO `user_scores` VALUES(10, 3, 2, 100, '2014-04-05 15:13:11', 0);\
+INSERT INTO `user_scores` VALUES(11, 0, 2, 144, '2014-04-09 03:12:37', 0);\
+INSERT INTO `user_scores` VALUES(12, 0, 2, 144, '2014-04-09 03:16:40', 0);\
+INSERT INTO `user_scores` VALUES(13, 0, 2, 361, '2014-04-09 03:25:15', 0);\
+INSERT INTO `user_scores` VALUES(14, 0, 2, 80, '2014-04-09 03:34:35', 0);\
+INSERT INTO `user_scores` VALUES(15, 0, 2, 80, '2014-04-09 03:35:56', 0);\
+INSERT INTO `user_scores` VALUES(16, 0, 2, 351, '2014-04-09 03:36:42', 0);\
+INSERT INTO `user_scores` VALUES(17, 0, 2, 421, '2014-04-09 04:06:22', 0);\
+INSERT INTO `user_scores` VALUES(18, 0, 2, 263, '2014-04-09 04:11:05', 0);\
+\
+--\
+-- Constraints for dumped tables\
+--\
+\
+--\
+-- Constraints for table `user_scores`\
+--\
+ALTER TABLE `user_scores`\
+  ADD CONSTRAINT `user_scores_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `user` (`user_id`);\
+}
